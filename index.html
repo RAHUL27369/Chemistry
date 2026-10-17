@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>KVS &amp; NVS PGT Chemistry — Syllabus Coach, Notes &amp; Self-Tests</title>
+<meta name="description" content="Free single-file study coach for the KVS/NVS PGT Chemistry Tier-2 exam: the 19 notified syllabus units with notes, formulas, worked examples, timed self-tests with CBSE-accurate negative marking, verified official links and a preparation guide.">
+<meta name="keywords" content="KVS PGT Chemistry, NVS PGT Chemistry, Tier-2 syllabus, CBSE recruitment 2026, chemistry study coach, PGT chemistry notes">
+<meta property="og:title" content="KVS / NVS PGT Chemistry — Study Coach">
+<meta property="og:description" content="19 notified syllabus units · notes · worked examples · timed self-tests with −0.25 negative marking · official links. Repositioned for the 2026–27 cycle.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_IN">
+<meta name="theme-color" content="#0f172a">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f172a'/%3E%3Cpath d='M13 6h6v2h-1v7.2l5.6 9.4A2 2 0 0 1 21.9 28h-11.8a2 2 0 0 1-1.7-2.8L14 15.2V8h-1z' fill='%2322d3ee'/%3E%3Cpath d='M10.4 20h11.2l2.3 3.9H8.1z' fill='%230f172a'/%3E%3C/svg%3E">
+<style>
+/* ---------- tokens ---------- */
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --ink:#10151f; --mut:#5b6473; --line:#dde1e8;
+  --acc:#0f766e; --acc2:#0891b2; --hi:#b45309; --bad:#b91c1c; --ok:#15803d;
+  --phy:#0e7490; --ino:#6d28d9; --org:#c2410c;
+  --r:14px; --sh:0 1px 2px rgba(16,21,31,.05),0 8px 24px -12px rgba(16,21,31,.18);
+  --f:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  --m:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  --tab:60px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;font:400 16.5px/1.6 var(--f);color:var(--ink);background:var(--bg);
+  padding-bottom:calc(var(--tab) + env(safe-area-inset-bottom,0px));overflow-x:hidden}
+h1,h2,h3,h4{line-height:1.2;letter-spacing:-.015em;margin:0}
+p{margin:0}
+a{color:var(--acc)}
+button{font:inherit}
+:focus-visible{outline:3px solid var(--acc2);outline-offset:2px;border-radius:6px}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+svg{display:block}
+.wrap{width:min(1080px,100% - 32px);margin-inline:auto}
+
+/* ---------- top bar ---------- */
+.bar{position:sticky;top:0;z-index:30;background:#0f172a;color:#f1f5f9;border-bottom:1px solid #1e293b}
+.bar .wrap{display:flex;align-items:center;gap:12px;min-height:56px;padding-block:8px}
+.bar h1{font-size:16px;font-weight:700;color:#fff;letter-spacing:-.02em}
+.bar .sub{display:block;font:500 11.5px/1.35 var(--m);color:#7dd3fc;letter-spacing:.02em}
+.bar .spacer{flex:1}
+.stamp{font:500 11px/1.3 var(--m);color:#94a3b8;border:1px solid #334155;border-radius:99px;padding:4px 9px;white-space:nowrap}
+#navtop{display:none}
+#navtop a{color:#cbd5e1;text-decoration:none;font-weight:600;font-size:14.5px;padding:7px 11px;border-radius:99px}
+#navtop a:hover{background:#1e293b;color:#fff}
+#navtop a[aria-current="page"]{background:#22d3ee;color:#083344}
+
+/* ---------- cycle banner ---------- */
+.banner{background:linear-gradient(180deg,#fff7ed,#fffbf5);border-bottom:1px solid #fde0b8}
+.banner .wrap{display:flex;gap:12px;align-items:flex-start;padding-block:12px}
+.banner .dot{flex:0 0 auto;width:10px;height:10px;border-radius:50%;background:var(--hi);margin-top:7px;box-shadow:0 0 0 4px #fde68a66}
+.banner h2{font-size:14px;color:#7c2d12;text-transform:uppercase;letter-spacing:.06em;font-family:var(--m);font-weight:600}
+.banner p{font-size:14.5px;color:#43291a;margin-top:3px}
+.banner details{margin-top:6px}
+.banner summary{cursor:pointer;font:600 13px var(--f);color:#9a3412}
+.banner .tl{margin-top:8px;font-size:13.5px;color:#43291a}
+.banner .tl div{display:flex;gap:10px;padding:2px 0;border-bottom:1px dashed #fcd9a8}
+.banner .tl b{font-family:var(--m);font-size:12.5px;min-width:104px;color:#7c2d12}
+
+/* ---------- layout ---------- */
+main{display:block;padding-block:22px 40px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh)}
+.sec-h{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:26px 0 12px}
+.sec-h h2{font-size:20px;font-weight:750}
+.sec-h .n{font:600 12px var(--m);color:var(--mut);background:#eef1f5;border-radius:99px;padding:3px 9px}
+.sec-h:first-child{margin-top:0}
+.kicker{font:600 11.5px/1 var(--m);text-transform:uppercase;letter-spacing:.09em;color:var(--mut)}
+.muted{color:var(--mut)}
+.small{font-size:13.5px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.pill{display:inline-flex;align-items:center;gap:5px;font:600 11.5px/1 var(--m);
+  border-radius:99px;padding:5px 9px;border:1px solid var(--line);background:#f8fafc;color:var(--mut)}
+.pill.phy{color:var(--phy);border-color:#a5d8e2;background:#ecfeff}
+.pill.ino{color:var(--ino);border-color:#ddd0fa;background:#f5f3ff}
+.pill.org{color:var(--org);border-color:#fbcfa9;background:#fff7ed}
+.pill.hi{color:#92400e;border-color:#fcd34d;background:#fffbeb}
+.pill.ok{color:var(--ok);border-color:#bbf7d0;background:#f0fdf4}
+.pill.warn{color:var(--bad);border-color:#fecaca;background:#fef2f2}
+
+/* ---------- hero / home ---------- */
+.hero{padding:22px;background:
+  radial-gradient(900px 340px at 12% -10%,#cffafe55,transparent 60%),
+  radial-gradient(700px 300px at 95% 0%,#ede9fe66,transparent 55%),var(--panel)}
+.hero h2{font-size:clamp(24px,4.6vw,34px);font-weight:800;max-width:20ch;margin-top:8px}
+.hero .lead{margin-top:8px;color:var(--mut);max-width:62ch;font-size:15.5px}
+.stats{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));margin-top:18px}
+.stat{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fcfdfe}
+.stat b{display:block;font:750 26px/1.05 var(--f);letter-spacing:-.03em}
+.stat span{font:500 11.5px var(--m);color:var(--mut);text-transform:uppercase;letter-spacing:.05em}
+.bar-t{height:7px;border-radius:99px;background:#e8ecf2;overflow:hidden;margin-top:9px}
+.bar-t i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),var(--acc2));border-radius:99px;transition:width .5s ease}
+.cta{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;
+  padding:0 18px;border-radius:99px;border:1.5px solid var(--ink);background:var(--ink);color:#fff;
+  font-weight:650;font-size:15px;text-decoration:none;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 18px -8px #10151f66}
+.btn.ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--ink)}
+.btn.acc{background:var(--acc);border-color:var(--acc)}
+.btn.sm{min-height:36px;padding:0 13px;font-size:13.5px}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+
+/* pattern cards */
+.pat{padding:16px;border-top:4px solid var(--acc)}
+.pat.t1{border-top-color:var(--acc2)} .pat.t2{border-top-color:var(--phy)} .pat.iv{border-top-color:var(--ino)}
+.pat h3{font-size:16.5px;display:flex;align-items:center;gap:7px}
+.pat .m{font:700 22px/1.15 var(--f);margin-top:6px;letter-spacing:-.02em}
+.pat ul{margin:8px 0 0;padding-left:17px;font-size:13.8px;color:#3b4353}
+.pat li{margin-bottom:3px}
+
+/* ---------- topics ---------- */
+.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.search{flex:1 1 220px;min-height:44px;padding:0 14px;border-radius:12px;border:1.5px solid var(--line);
+  background:#fff;font:inherit;color:inherit}
+.search:focus{border-color:var(--acc2);outline:none;box-shadow:0 0 0 3px #0891b222}
+.chipbar{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}
+.chip{min-height:38px;padding:0 14px;border-radius:99px;border:1.5px solid var(--line);background:#fff;
+  font-weight:600;font-size:13.8px;color:var(--mut);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.ulist{display:grid;gap:10px}
+.urow{display:flex;gap:12px;align-items:flex-start;padding:14px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--r);text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+.urow:hover{border-color:#a9b3c2;transform:translateY(-1px)}
+.urow .idx{flex:0 0 auto;width:34px;height:34px;border-radius:9px;display:grid;place-items:center;
+  font:700 13px var(--m);background:#eef2f7;color:var(--mut)}
+.urow.done .idx{background:#dcfce7;color:var(--ok)}
+.urow .bd{flex:1;min-width:0}
+.urow .bd h3{font-size:15.8px;font-weight:700}
+.urow .bd p{font-size:13.3px;color:var(--mut);margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.urow .badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.ticked{width:22px;height:22px;flex:0 0 auto;border-radius:7px;border:1.5px solid var(--line);background:#fff;
+  display:grid;place-items:center;cursor:pointer;margin-top:2px}
+.ticked[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:#fff}
+
+/* ---------- unit page ---------- */
+.unit-head{padding:20px;background:#fff}
+.unit-head h2{font-size:clamp(21px,4vw,28px);font-weight:800;margin-top:8px}
+.note-sec{margin-top:18px;padding:16px}
+.note-sec h3{font-size:15.5px;color:var(--acc);display:flex;gap:7px;align-items:center;margin-bottom:7px}
+.note-sec ul{margin:0;padding-left:19px}
+.note-sec li{margin-bottom:6px;font-size:15px;color:#252c39}
+.formulas{margin-top:14px;padding:14px;background:#0f172a;color:#e2e8f0;border-radius:12px}
+.formulas h3{font:600 11.5px var(--m);text-transform:uppercase;letter-spacing:.08em;color:#7dd3fc;margin-bottom:9px}
+.formulas code{display:block;font:400 14.5px/1.75 var(--m);color:#f1f5f9;white-space:pre-wrap;word-break:break-word}
+.ex{margin-top:14px;padding:16px;border-left:4px solid var(--acc2);background:#f8fdff}
+.ex h3{font-size:14px;color:#0e5f74;font-family:var(--m);text-transform:uppercase;letter-spacing:.06em}
+.ex .q{margin-top:8px;font-weight:600}
+.ex ol{margin:9px 0 0;padding-left:20px;font-size:14.6px;color:#2c3543}
+.ex ol li{margin-bottom:5px}
+.ex .a{margin-top:10px;padding:9px 12px;border-radius:9px;background:#dcfce7;color:#14532d;font-weight:650;font-size:14.5px}
+.offnote{margin-top:14px;padding:13px;border-radius:12px;background:#fffbeb;border:1px solid #fde68a;color:#78350f;font-size:14px}
+.offnote b{font-weight:750}
+
+/* ---------- test ---------- */
+.mode{padding:16px;display:flex;gap:14px;flex-direction:column}
+.mode h3{font-size:16.5px}
+.mode p{font-size:13.8px;color:var(--mut)}
+.mode .row{display:flex;gap:14px;flex-wrap:wrap;font:600 12.5px var(--m);color:var(--mut)}
+.quiz-top{position:sticky;top:56px;z-index:20;display:flex;gap:10px;align-items:center;flex-wrap:wrap;
+  padding:11px 14px;background:#fff;border:1px solid var(--line);border-radius:var(--r);margin-bottom:14px}
+.quiz-top .q{font:700 14px var(--m)}
+.quiz-top .clock{font:700 15px var(--m);color:var(--bad);margin-left:auto}
+.qcard{padding:18px;background:#fff}
+.qcard fieldset{border:0;margin:0;padding:0}
+.qcard legend{font-size:17px;font-weight:650;line-height:1.45;padding:0;margin-bottom:14px}
+.qcard .meta{font:600 11.5px var(--m);color:var(--mut);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.opt{display:flex;gap:11px;align-items:flex-start;padding:12px;border:1.5px solid var(--line);
+  border-radius:11px;margin-bottom:9px;cursor:pointer;background:#fff;transition:border-color .12s,background .12s}
+.opt:hover{border-color:#9aa6b7;background:#fbfcfe}
+.opt input{margin:3px 0 0;flex:0 0 auto;width:18px;height:18px;accent-color:var(--acc)}
+.opt.sel{border-color:var(--acc);background:#f0fdfa}
+.opt .k{font:700 13px var(--m);color:var(--mut);min-width:18px}
+.opt.correct{border-color:#16a34a;background:#f0fdf4}
+.opt.wrong{border-color:#dc2626;background:#fef2f2}
+.exp{margin-top:12px;padding:12px;border-radius:10px;background:#f1f5f9;font-size:14.4px;color:#1e293b}
+.exp b{color:var(--acc)}
+.res{padding:22px;text-align:center}
+.res .big{font:800 clamp(34px,9vw,56px)/1 var(--f);letter-spacing:-.04em}
+.res .sub{font:600 14px var(--m);color:var(--mut);margin-top:6px}
+.res .calc{margin:16px auto 0;max-width:420px;text-align:left;font:400 14px var(--m);
+  background:#0f172a;color:#e2e8f0;padding:14px;border-radius:12px;white-space:pre-wrap;line-height:1.9}
+.brk{margin-top:16px;display:grid;gap:8px}
+.brk .r{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;font-size:13.5px;
+  padding:8px 11px;background:#f8fafc;border-radius:9px;border:1px solid var(--line)}
+.brk .r b{font-family:var(--m);font-size:12.5px}
+
+/* ---------- links ---------- */
+.lnk{display:flex;gap:12px;padding:14px;background:#fff;border:1px solid var(--line);border-radius:12px;
+  text-decoration:none;color:inherit}
+.lnk:hover{border-color:#9aa6b7}
+.lnk .ic{flex:0 0 auto;width:36px;height:36px;border-radius:9px;background:#ecfeff;color:var(--phy);display:grid;place-items:center}
+.lnk h3{font-size:15px;font-weight:700}
+.lnk p{font-size:13.2px;color:var(--mut);margin-top:2px}
+.lnk .host{font:500 11.5px var(--m);color:var(--acc);word-break:break-all;margin-top:4px;display:block}
+
+/* ---------- guide ---------- */
+.gsec{padding:18px;margin-bottom:14px}
+.gsec h3{font-size:17px;font-weight:750;margin-bottom:9px;display:flex;gap:8px;align-items:center}
+.gsec ul{margin:0;padding-left:19px}
+.gsec li{margin-bottom:7px;font-size:15px}
+table{width:100%;border-collapse:collapse;font-size:14.2px;margin-top:6px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 11.5px var(--m);text-transform:uppercase;letter-spacing:.06em;color:var(--mut);background:#f8fafc}
+td b{font-weight:700}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* ---------- bottom nav ---------- */
+#tabs{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;background:#fff;
+  border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);box-shadow:0 -6px 20px -14px #10151f55}
+#tabs a{flex:1;min-height:var(--tab);display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:3px;text-decoration:none;color:var(--mut);font:600 10.5px/1 var(--f);letter-spacing:.02em;padding:6px 2px}
+#tabs a[aria-current="page"]{color:var(--acc)}
+#tabs a svg{width:22px;height:22px}
+#tabs a:hover{color:var(--ink)}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);background:#fff;padding:18px 0;margin-top:14px}
+footer p{font-size:12.8px;color:var(--mut);margin-bottom:6px}
+
+/* ---------- responsive ---------- */
+@media (min-width:760px){
+  #navtop{display:flex;gap:2px;align-items:center}
+  #tabs{display:none}
+  body{padding-bottom:0}
+  .quiz-top{top:56px}
+  main{padding-block:30px 56px}
+}
+@media print{
+  .bar,#tabs,.banner,.cta,.tools,.chipbar{display:none!important}
+  body{background:#fff;padding:0}
+  .card,.note-sec,.formulas,.ex{break-inside:avoid;box-shadow:none}
+  .formulas{background:#fff;color:#000;border:1px solid #ccc}
+  .formulas code{color:#000}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+
+<header class="bar">
+  <div class="wrap">
+    <div>
+      <h1>KVS / NVS PGT Chemistry</h1>
+      <span class="sub">Syllabus coach · Tier-2 (Notification 01/2025 pattern)</span>
+    </div>
+    <div class="spacer"></div>
+    <nav id="navtop" aria-label="Sections">
+      <a href="#home" data-tab="home">Home</a>
+      <a href="#topics" data-tab="topics">Topics</a>
+      <a href="#test" data-tab="test">Test</a>
+      <a href="#links" data-tab="links">Links</a>
+      <a href="#guide" data-tab="guide">Guide</a>
+    </nav>
+    <span class="stamp" id="stamp">Revision edition</span>
+  </div>
+</header>
+
+<div class="banner" role="region" aria-label="Recruitment cycle status">
+  <div class="wrap">
+    <span class="dot" aria-hidden="true"></span>
+    <div>
+      <h2>Notification-specific preparation</h2>
+      <p>This coach uses the <b>Notification 01/2025 syllabus framework</b>. It is an unofficial revision aid, not a live recruitment-status service. Dates, eligibility, test mode and selection rules must be checked against the current official notification. No future exam pattern is guaranteed.</p>
+
+    </div>
+  </div>
+</div>
+
+<main id="main" class="wrap" tabindex="-1" aria-live="polite"></main>
+
+<nav id="tabs" aria-label="Sections">
+  <a href="#home" data-tab="home" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V21h13V9.5"/></svg>Home</a>
+  <a href="#topics" data-tab="topics"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M4 4.5h6A3 3 0 0 1 13 7v13a2.5 2.5 0 0 0-2.5-2H4z"/><path d="M20 4.5h-6A3 3 0 0 0 11 7v13a2.5 2.5 0 0 1 2.5-2H20z"/></svg>Topics</a>
+  <a href="#test" data-tab="test"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v6.2L5.6 17A2.6 2.6 0 0 0 7.9 21h8.2a2.6 2.6 0 0 0 2.3-4L14 9.2V3"/><path d="M7.4 15h9.2"/></svg>Test</a>
+  <a href="#links" data-tab="links"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M10.5 13.5a4 4 0 0 0 5.7 0l2.6-2.6a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M13.5 10.5a4 4 0 0 0-5.7 0l-2.6 2.6a4 4 0 0 0 5.7 5.7l1-1"/></svg>Links</a>
+  <a href="#guide" data-tab="guide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4.5"/><circle cx="12" cy="8" r="1" fill="currentColor" stroke="none"/></svg>Guide</a>
+</nav>
+
+<footer>
+  <div class="wrap">
+    <p><b>Unofficial study aid.</b> Not affiliated with, endorsed by, or connected to KVS, NVS or CBSE.
+       Always confirm the exam pattern, syllabus, eligibility and dates from the official notification
+       at <a href="https://www.cbse.gov.in/" target="_blank" rel="noopener noreferrer">cbse.gov.in</a>,
+       <a href="https://kvsangathan.nic.in/" target="_blank" rel="noopener noreferrer">kvsangathan.nic.in</a> or
+       <a href="https://navodaya.gov.in/" target="_blank" rel="noopener noreferrer">navodaya.gov.in</a>.</p>
+    <p>Built as a single offline-capable HTML file — no trackers, no ads, no accounts. Your progress stays
+       in this browser only. <span id="foot-stamp"></span></p>
+  </div>
+</footer>
+
+<script>
+"use strict";
+/* ============================================================
+   CONFIG — edit these strings when a new notification is out
+   ============================================================ */
+const CONFIG = {
+  verified: "16 October 2026",
+  cycle: "2026–27 (next notification not yet released)",
+  prevNotification: "Rectt. Notification 01/2025 dated 13-11-2025",
+  tier1: { q:100, marks:300, perQ:3, neg:1, mins:120, mode:"Computer-based objective (CBT)", role:"Qualifying / screening only" },
+  tier2: { objQ:60, objMarks:60, objPerQ:1, objNeg:0.25, descQ:10, descMarks:40, descPerQ:4, total:100, mins:150,
+           mode:"Pen & paper + OMR", neg:"−0.25 per wrong objective answer; no negative marking on descriptive" },
+  interview: { marks:100, shortlist:"1:3 from Tier-2" },
+  merit: "Final merit = 85% Tier-2 + 15% Interview. Tier-1 marks are NOT counted.",
+  vacancies: "15,762 total in the 2025–26 drive (KVS 9,921 + NVS 5,841); KVS PGT Chemistry ≈ 227 posts",
+  timeline: [
+    ["13 Nov 2025","Notification 01/2025 released by CBSE"],
+    ["14 Nov – 11 Dec 2025","Online applications (last date extended to 11 Dec)"],
+    ["10–11 Jan 2026","Tier-1 exam (computer-based)"],
+    ["31 Jan 2026","Tier-1 answer key"],
+    ["28 Feb 2026","Tier-1 result — 1:10 shortlisting for Tier-2"],
+    ["27–31 Mar 2026","Tier-2 exam"],
+    ["13 May 2026","Tier-2 provisional key + OMR response sheets"],
+    ["17 Aug – 14 Sep 2026","Final key + phase-wise Tier-2 results"],
+    ["21 Aug 2026","PGT (Chemistry) Tier-2 result declared"],
+    ["24 Sep 2026","Tier-3 interview call letters released"],
+    ["18–22 Sep 2026","PGT (incl. Chemistry) interview + document verification"],
+    ["18 Sep – 8 Oct 2026","Overall interview / DV window"],
+    ["Pending","Final merit list, appointment, joining"]
+  ]
+};
+
+const OFFICIAL_COUNT = 19;
+
+/* ============================================================
+   SYLLABUS DATA
+   Each unit: id, b(ranch), t(itle), off(icial?), pr(iority), w(eight %),
+   y = high-yield subtopics, n = [[heading, bullet, bullet...], ...],
+   f = formulas, e = worked example {q, s(teps), a(nswer)}
+   ============================================================ */
+const UNITS = [
+/* ---------------- PHYSICAL CHEMISTRY (8 official) ---------------- */
+{id:"p1",b:"phy",t:"Basic Concepts of Chemistry",off:true,pr:"high",w:5,
+ y:["Mole concept & stoichiometry","Empirical vs molecular formula","Limiting reagent","Laws of chemical combination","Concentration terms"],
+ n:[["Laws of chemical combination",
+   "Law of Conservation of Mass — Lavoisier (1774): mass of reactants = mass of products.",
+   "Law of Definite Proportions — Proust: a given compound always contains the same elements in the same proportion by mass, whatever its source.",
+   "Law of Multiple Proportions — Dalton: if two elements form more than one compound, the masses of one element combining with a fixed mass of the other are in a simple whole-number ratio (CO vs CO₂ → 1:2).",
+   "Law of Gaseous Volumes — Gay-Lussac: gases combine in simple ratios by volume at the same T and p.",
+   "Avogadro hypothesis: equal volumes of all gases at the same T and p contain equal numbers of molecules. This distinguishes atoms from molecules and gives molar volume 22.4 L (older STP 273 K, 1 atm) or 22.7 L (IUPAC STP 273 K, 1 bar)."],
+  ["Dalton's atomic theory & its limits",
+   "Matter is made of indivisible atoms; atoms of an element are identical in mass and properties; compounds form in fixed whole-number ratios; chemical reactions are rearrangements of atoms.",
+   "Limitations: isotopes (same element, different mass), isobars (different elements, same mass), and non-integral atomic masses."],
+  ["Mole concept",
+   "1 mole = 6.022 × 10²³ particles (Nₐ) = molar mass in grams = 22.4 L of any gas at STP.",
+   "Atomic mass unit: 1 u = 1/12 the mass of one ¹²C atom = 1.66 × 10⁻²⁴ g.",
+   "Average atomic mass is the isotopic abundance-weighted mean (e.g. Cl = 35.5 u)."],
+  ["Stoichiometry & limiting reagent",
+   "The limiting reagent is completely consumed and decides the amount of product; find it by comparing (moles available)/(stoichiometric coefficient).",
+   "Percentage yield = (actual yield / theoretical yield) × 100."],
+  ["Empirical vs molecular formula",
+   "Empirical = simplest whole-number ratio of atoms; molecular = actual number.",
+   "Molecular formula = n × empirical formula, where n = molar mass / empirical formula mass."]],
+ f:["n = m/M = N/Nₐ = V(gas, L)/22.4  at STP","Molarity M = mol of solute / volume of solution (L)","Molality m = mol of solute / mass of solvent (kg)","Mole fraction xₐ = nₐ / (nₐ + n_b) ;  xₐ + x_b = 1","% by mass = (mass of component / total mass) × 100","Empirical formula mass → n = M / EF mass"],
+ e:{q:"A compound contains 40.0% C, 6.7% H and 53.3% O by mass. Its molar mass is 180 g mol⁻¹. Find its molecular formula.",
+   s:["Assume 100 g sample → C 40.0 g, H 6.7 g, O 53.3 g.",
+      "Moles: C = 40.0/12 = 3.33; H = 6.7/1 = 6.7; O = 53.3/16 = 3.33.",
+      "Divide by smallest (3.33) → C 1 : H 2.01 : O 1 → empirical formula CH₂O.",
+      "Empirical formula mass = 12 + 2 + 16 = 30 g mol⁻¹.",
+      "n = 180/30 = 6 → multiply the subscripts by 6."],
+   a:"Molecular formula = C₆H₁₂O₆ (glucose)."}},
+
+{id:"p2",b:"phy",t:"Structure of Atom",off:true,pr:"high",w:6,
+ y:["Quantum numbers","Bohr model energy & radius","de Broglie & Heisenberg","Orbital shapes & nodal surfaces","Aufbau, Pauli, Hund","Stability of half-filled / fully-filled orbitals"],
+ n:[["Discovery of subatomic particles",
+   "Electron — J.J. Thomson, cathode rays; charge/mass ratio e/m = −1.7588 × 10¹¹ C kg⁻¹ (independent of the gas and electrode material).",
+   "Charge on electron — R.A. Millikan's oil-drop experiment: −1.602 × 10⁻¹⁹ C; hence mass of electron = 9.11 × 10⁻³¹ kg.",
+   "Proton — canal rays (positive rays, E. Goldstein); charge-to-mass ratio depends on the gas taken.",
+   "Neutron — James Chadwick (1932), by bombarding beryllium with α-particles.",
+   "Atomic number — Moseley: √ν = a(Z − b); the fundamental property of an element is Z, not mass."],
+  ["Models and their limitations",
+   "Thomson's plum-pudding model: could not explain Rutherford's scattering result.",
+   "Rutherford's nuclear model (α-scattering on gold foil): most α-particles passed straight through (atom mostly empty), a few deflected, ~1 in 20,000 rebounded (tiny dense positive nucleus). Limitations: could not explain atomic stability (an accelerating electron should radiate and spiral in, in ~10⁻⁸ s) or the line spectrum.",
+   "Bohr's model: electrons move in fixed circular orbits (stationary states) with quantised angular momentum mvr = nh/2π; energy is absorbed/emitted only on transition, ΔE = hν. Energy Eₙ = −13.6 Z²/n² eV; radius rₙ = 0.529 n²/Z Å.",
+   "Limitations of Bohr: only explains hydrogen-like one-electron species; cannot explain fine structure (Zeeman & Stark effects), chemical bonding, or the wave nature of the electron."],
+  ["Wave nature of matter",
+   "de Broglie: λ = h/mv = h/√(2mE). Significant only for microscopic particles.",
+   "Heisenberg uncertainty principle: Δx·Δp ≥ h/4π (equivalently Δx·Δv ≥ h/4πm). A consequence of wave-particle duality — it rules out definite orbits and replaces them with orbitals (probability regions)."],
+  ["Quantum numbers",
+   "Principal n = 1, 2, 3… → size and energy of the shell; max electrons 2n².",
+   "Azimuthal l = 0 to (n−1) → subshell shape (s, p, d, f) and orbital angular momentum.",
+   "Magnetic m = −l to +l → orientation; number of orbitals in a subshell = 2l + 1.",
+   "Spin mₛ = +½ or −½ → two electrons per orbital.",
+   "Nodes: angular nodes = l; radial nodes = n − l − 1; total nodes = n − 1. A 3d orbital has 2 angular and 0 radial nodes; a 3s orbital has 0 angular and 2 radial nodes."],
+  ["Filling of orbitals",
+   "Aufbau principle — orbitals fill in increasing (n + l); for equal (n + l), lower n fills first (hence 4s before 3d).",
+   "Pauli exclusion principle — no two electrons in an atom have all four quantum numbers identical.",
+   "Hund's rule of maximum multiplicity — degenerate orbitals are singly occupied with parallel spins before pairing.",
+   "Exceptions: Cr [Ar] 3d⁵4s¹ and Cu [Ar] 3d¹⁰4s¹ — extra stability of exactly half-filled and completely filled subshells (symmetry + exchange energy).",
+   "Anomalous configurations also appear in Nb, Mo, Ru, Rh, Pd, Pt, Au for the same reason."]],
+ f:["mvr = nh/2π  (Bohr quantisation)","Eₙ = −13.6 Z²/n² eV = −2.18 × 10⁻¹⁸ Z²/n² J","rₙ = 0.529 n²/Z Å","ΔE = hν = 2.18 × 10⁻¹⁸ Z² (1/n₁² − 1/n₂²) J","1/λ = R̄ Z² (1/n₁² − 1/n₂²);  R̄ = 1.097 × 10⁷ m⁻¹","λ = h/mv (de Broglie)","Δx·Δp ≥ h/4π"],
+ e:{q:"How many electrons in a neutral atom can have n = 3 and mₛ = −½?",
+   s:["For n = 3, l can be 0, 1 or 2 → subshells 3s, 3p, 3d.",
+      "Number of orbitals = n² = 9 (1 + 3 + 5).",
+      "Each orbital holds exactly one electron with mₛ = −½.",
+      "Maximum capacity of the shell is 2n² = 18 electrons, half with each spin."],
+   a:"9 electrons (the shell holds 18 in all, 9 with spin −½)."}},
+
+{id:"p3",b:"phy",t:"Chemical Thermodynamics",off:true,pr:"high",w:6,
+ y:["First law & sign conventions","State vs path functions","Enthalpy relations & Hess's law","Entropy and Gibbs energy","Criteria for spontaneity and equilibrium","ΔG° = −RT ln K"],
+ n:[["Systems, properties and state functions",
+   "Types of system: open (matter + energy exchange), closed (energy only), isolated (neither), adiabatic (no heat transfer).",
+   "Extensive properties depend on amount (mass, volume, U, H, S, G); intensive properties do not (T, p, density, molar volume, refractive index, viscosity).",
+   "State functions depend only on initial and final states: U, H, S, G, p, V, T. Work and heat are path functions.",
+   "Work: w = −p_ex ΔV for expansion against a constant external pressure (sign convention: work done ON the system is positive)."],
+  ["First law",
+   "ΔU = q + w. For a reversible process w_rev = −2.303 nRT log(V₂/V₁) (isothermal ideal gas).",
+   "Adiabatic: q = 0, so ΔU = w and T changes. Isothermal ideal gas: ΔU = 0, so q = −w.",
+   "Isochoric (ΔV = 0): w = 0, so ΔU = q_v. Hence q_v measures ΔU.",
+   "At constant pressure q_p = ΔH, where H = U + pV. ΔH = ΔU + pΔV = ΔU + Δn_g RT for ideal gases.",
+   "ΔH is +ve for endothermic and −ve for exothermic reactions. Δn_g = moles of gaseous products − moles of gaseous reactants."],
+  ["Enthalpies of different processes",
+   "Enthalpy of bond dissociation, combustion (always −ve), formation (Δ_fH° of an element in its standard state = 0), atomisation, sublimation, phase transition (fusion, vaporisation), ionisation, solution and dilution.",
+   "Δ_fH°(H₂O, l) = −285.8 kJ mol⁻¹. Standard state = 1 bar, specified T (usually 298 K).",
+   "Hess's law: ΔH for an overall reaction is the same whether it occurs in one step or several — a direct consequence of enthalpy being a state function. Used to find Δ_fH of compounds that cannot be measured directly (e.g. CO from C)."],
+  ["Second law, entropy and Gibbs energy",
+   "Entropy S is a measure of disorder/randomness; ΔS_universe > 0 for a spontaneous process. ΔS_sys alone is not a sufficient criterion.",
+   "ΔS = q_rev/T. ΔS > 0 for melting, vaporisation, dissolution of most salts, increase in moles of gas; ΔS < 0 for freezing, condensation, polymerisation.",
+   "Gibbs energy G = H − TS, so ΔG = ΔH − TΔS at constant T.",
+   "ΔG < 0 spontaneous; ΔG > 0 non-spontaneous; ΔG = 0 at equilibrium.",
+   "ΔG° = −RT ln K = −2.303 RT log K, and ΔG° = ΔH° − TΔS°. Hence ln K = −ΔH°/RT + ΔS°/R (van't Hoff form).",
+   "If ΔH < 0 and ΔS > 0 → spontaneous at all T; ΔH > 0 and ΔS < 0 → never spontaneous; the other two cases are temperature-dependent, with the crossover at T = ΔH/ΔS."],
+  ["Third law",
+   "The entropy of a perfectly crystalline substance approaches zero as T → 0 K. It allows absolute entropies to be tabulated and ΔS of reaction to be calculated as Σ S°(products) − Σ S°(reactants)."]],
+ f:["ΔU = q + w","w = −p_ex ΔV","ΔH = ΔU + Δn_g RT","ΔG = ΔH − TΔS","ΔG° = −2.303 RT log K","ΔS°(rxn) = Σ S°(products) − Σ S°(reactants)","ΔH°(rxn) = Σ Δ_fH°(products) − Σ Δ_fH°(reactants)","T(equilibrium) = ΔH/ΔS"],
+ e:{q:"For a reaction ΔH° = +40.0 kJ mol⁻¹ and ΔS° = +120 J K⁻¹ mol⁻¹. Above what temperature does it become spontaneous?",
+   s:["Spontaneity needs ΔG < 0, i.e. ΔH − TΔS < 0.",
+      "Since ΔH > 0 and ΔS > 0, the reaction becomes spontaneous only at high T.",
+      "Set ΔG = 0: T = ΔH/ΔS = 40000 J mol⁻¹ / 120 J K⁻¹ mol⁻¹ = 333.3 K.",
+      "Convert units carefully — ΔH must be in joules to match ΔS."],
+   a:"T > 333 K (≈ 60 °C). Above this the TΔS term outweighs the endothermic ΔH."}},
+
+{id:"p4",b:"phy",t:"Equilibrium",off:true,pr:"high",w:7,
+ y:["Kc, Kp and their relation","Reaction quotient Q vs K","Le Chatelier's principle","Ionic equilibrium, Ka/Kb and pH","Buffer & Henderson equation","Salt hydrolysis","Ksp and common-ion effect"],
+ n:[["Physical and chemical equilibrium",
+   "Equilibrium is dynamic: forward and reverse rates are equal and concentrations stay constant.",
+   "For aA + bB ⇌ cC + dD, Kc = [C]^c[D]^d / ([A]^a[B]^b). Pure solids and pure liquids are omitted.",
+   "Kp = Kc(RT)^Δn_g, with R = 0.0821 L atm K⁻¹ mol⁻¹ when p is in atm; Δn_g = gaseous products − gaseous reactants.",
+   "Q (reaction quotient) has the same expression using instantaneous concentrations. Q < K → net forward; Q > K → net reverse; Q = K → equilibrium.",
+   "For the reverse reaction K' = 1/K; multiplying the equation by n raises K to the power n; adding two equations multiplies their K values."],
+  ["Le Chatelier's principle",
+   "A system at equilibrium, when disturbed, shifts so as to counteract the disturbance.",
+   "Increase in concentration of a reactant → shift forward. Increase in pressure (or decrease in volume) → shift toward fewer moles of gas; no effect if Δn_g = 0 (e.g. H₂ + I₂ ⇌ 2HI).",
+   "Increase in temperature favours the endothermic direction — K changes with temperature (this is the only disturbance that changes K itself).",
+   "A catalyst speeds both directions equally: it shortens the time to reach equilibrium but does not change K or the position of equilibrium.",
+   "Adding an inert gas at constant volume has no effect; at constant pressure it favours the direction with more moles of gas.",
+   "Industrial examples: Haber process (N₂ + 3H₂ ⇌ 2NH₃, ΔH = −92.4 kJ mol⁻¹) → high p (200 atm), moderate T (~700 K), Fe catalyst with Mo promoter; Contact process (2SO₂ + O₂ ⇌ 2SO₃) → ~2 bar, 700 K, V₂O₅."],
+  ["Ionic equilibrium",
+   "Strong electrolytes are almost completely ionised (NaCl, HCl, NaOH); weak electrolytes only partly (CH₃COOH, NH₃, H₂O).",
+   "For a weak acid HA ⇌ H⁺ + A⁻: Ka = [H⁺][A⁻]/[HA]. For a weak base B + H₂O ⇌ BH⁺ + OH⁻: Kb.",
+   "Ka × Kb = Kw for a conjugate acid–base pair; hence pKa + pKb = 14 at 298 K.",
+   "Degree of ionisation α = √(Ka/c) for a weak electrolyte (when α ≪ 1) — Ostwald dilution law, so α increases on dilution.",
+   "Ionisation of polybasic acids is stepwise with Ka₁ ≫ Ka₂ ≫ Ka₃.",
+   "Kw = [H⁺][OH⁻] = 1.0 × 10⁻¹⁴ at 298 K; pKw = 14. Kw increases with temperature, so neutral water at 60 °C has pH < 7 yet is still neutral.",
+   "pH = −log[H⁺]; pOH = −log[OH⁻]; pH + pOH = 14."],
+  ["Buffer solutions",
+   "A buffer resists change in pH on small addition of acid or base, or on dilution.",
+   "Acidic buffer: weak acid + its salt with a strong base (CH₃COOH/CH₃COONa), pH < 7. Basic buffer: weak base + its salt with a strong acid (NH₄OH/NH₄Cl), pH > 7.",
+   "Henderson–Hasselbalch: pH = pKa + log([salt]/[acid]); for bases pOH = pKb + log([salt]/[base]).",
+   "Buffer capacity is highest when [salt] = [acid], i.e. pH = pKa. Blood (H₂CO₃/HCO₃⁻, pH 7.4) and the phosphate buffer are biological examples."],
+  ["Salt hydrolysis",
+   "Salt of a strong acid + strong base (NaCl) → no hydrolysis, pH 7.",
+   "Strong acid + weak base (NH₄Cl) → cation hydrolyses, acidic solution.",
+   "Weak acid + strong base (CH₃COONa) → anion hydrolyses, basic solution.",
+   "Weak acid + weak base (CH₃COONH₄) → pH ≈ 7 + ½(pKa − pKb)."],
+  ["Solubility product and common-ion effect",
+   "For AₓB_y ⇌ xA^y+ + yB^x−, Ksp = [A]^x[B]^y. Solubility of a 1:1 salt s = √Ksp; of A₂B type s = (Ksp/4)^(1/3).",
+   "Precipitation occurs when the ionic product exceeds Ksp.",
+   "Common-ion effect: adding a common ion suppresses the ionisation of a weak electrolyte and lowers the solubility of a sparingly soluble salt (e.g. NaCl lowers AgCl solubility; NH₄Cl suppresses NH₄OH ionisation before precipitating group-III hydroxides).",
+   "Applications: common-ion effect is used in soap making (salting out), in the purification of NaCl, and in qualitative analysis group separations."]],
+ f:["Kp = Kc(RT)^Δn_g","Q vs K decides direction","Ka·Kb = Kw ; pKa + pKb = 14","α = √(Ka/c)","pH = pKa + log([salt]/[acid])  (buffer)","Kw = [H⁺][OH⁻] = 10⁻¹⁴ at 298 K","Ksp = [A]ˣ[B]ʸ ; s = √Ksp for a 1:1 salt","pH(weak acid+weak base salt) = 7 + ½(pKa − pKb)"],
+ e:{q:"A buffer contains 0.10 M CH₃COOH and 0.20 M CH₃COONa. Ka = 1.8 × 10⁻⁵. Find its pH, and the pH after adding 0.01 mol HCl to 1 L (assume no volume change).",
+   s:["Initial: pH = pKa + log([salt]/[acid]) = −log(1.8 × 10⁻⁵) + log(0.20/0.10) = 4.74 + 0.30 = 5.04.",
+      "Added H⁺ reacts with CH₃COO⁻ → CH₃COOH, so salt falls to 0.19 M and acid rises to 0.11 M.",
+      "New pH = 4.74 + log(0.19/0.11) = 4.74 + log 1.727 = 4.74 + 0.237 = 4.98.",
+      "Note the change: only 0.06 pH unit, whereas 0.01 M HCl in pure water would shift pH from 7 to 2."],
+   a:"pH 5.04 → 4.98. The buffer absorbs the added acid with negligible pH change."}},
+
+{id:"p5",b:"phy",t:"Redox Reactions",off:true,pr:"medium",w:4,
+ y:["Oxidation number rules","Balancing by half-reaction and oxidation-number methods","Identifying oxidising/reducing agents","Disproportionation","Applications"],
+ n:[["Concepts",
+   "Oxidation = addition of oxygen/electronegative element, removal of hydrogen/electropositive element, loss of electrons, increase in oxidation number.",
+   "Reduction = the exact reverse. Oxidation and reduction always occur together.",
+   "Oxidising agent (oxidant) gets reduced; reducing agent (reductant) gets oxidised.",
+   "In a redox reaction the total increase in oxidation number equals the total decrease."],
+  ["Oxidation number rules",
+   "Free elements = 0 (O₂, Na, S₈).",
+   "Monoatomic ion = its charge. Group 1 = +1, Group 2 = +2, Al = +3 in compounds.",
+   "Fluorine = −1 always (most electronegative element).",
+   "Hydrogen = +1 with non-metals, −1 in metal hydrides (NaH, CaH₂).",
+   "Oxygen = −2 normally; −1 in peroxides (H₂O₂, Na₂O₂); −½ in superoxides (KO₂); +2 in OF₂.",
+   "Sum of oxidation numbers = 0 for a neutral molecule, = the charge for a polyatomic ion.",
+   "In a compound the more electronegative element takes the negative oxidation number."],
+  ["Types of redox reactions",
+   "Direct redox (both half-reactions in the same vessel, e.g. Zn + Cu²⁺) and indirect redox (half-reactions separated → the basis of electrochemical cells).",
+   "Disproportionation: the same species is oxidised and reduced (2H₂O₂ → 2H₂O + O₂; 3ClO⁻ → 2Cl⁻ + ClO₃⁻). Requires the element to have at least three accessible oxidation states.",
+   "Comproportionation is the reverse (e.g. NH₄NO₂ → N₂ + 2H₂O)."],
+  ["Balancing methods",
+   "Oxidation-number method: assign oxidation numbers → identify what is oxidised and reduced → equalise the total change → balance the remaining atoms → add H⁺/OH⁻ and H₂O for acidic/medium.",
+   "Ion-electron (half-reaction) method: split into two half-reactions → balance atoms other than O and H → add H₂O for O, H⁺ for H (acidic) or OH⁻ (basic) → add electrons to balance charge → multiply so electrons cancel → add and simplify.",
+   "In acidic medium add H⁺; in basic medium add the same H⁺ then neutralise with OH⁻ on both sides."],
+  ["Applications",
+   "Redox titrations: permanganometry (KMnO₄, self-indicator, pink endpoint in acid medium) and dichrometry (K₂Cr₂O₇ with diphenylamine/ferroin indicator).",
+   "Estimation of Fe²⁺, oxalate, H₂O₂; iodometry/iodimetry for copper and vitamin C.",
+   "Everyday and industrial: combustion, respiration, photosynthesis, corrosion and its prevention, metallurgy (smelting, thermite), photography, batteries, bleaching (Cl₂, H₂O₂, SO₂), water treatment, hydrogen economy."]],
+ f:["Total increase in oxidation number = total decrease","H₂O₂ acts as both oxidant (→ H₂O, −1 to −2) and reductant (→ O₂, −1 to 0)","Equivalent mass of an oxidant = molar mass / change in oxidation number per molecule"],
+ e:{q:"Balance in acidic medium: MnO₄⁻ + Fe²⁺ + H⁺ → Mn²⁺ + Fe³⁺ + H₂O",
+   s:["Oxidation half: Fe²⁺ → Fe³⁺ + e⁻ (× 5).",
+      "Reduction half: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O (Mn: +7 → +2).",
+      "Electrons already balance: 5 gained, 5 lost.",
+      "Add: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O.",
+      "Check charge: left −1 + 10 + 8 = +17; right +2 + 15 = +17 ✓."],
+   a:"MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O. This is the standard titration of iron(II) with permanganate."}},
+
+{id:"p6",b:"phy",t:"Solutions",off:true,pr:"high",w:6,
+ y:["Concentration terms & interconversion","Henry's law","Raoult's law and ideal/non-ideal solutions","Azeotropes","All four colligative properties","van't Hoff factor and abnormal molar mass"],
+ n:[["Expressing concentration",
+   "Mass % (w/w), volume % (v/v), mass-by-volume % (w/v, used in medicine), mole fraction x, molarity M (temperature-dependent, since volume changes with T), molality m (temperature-independent — preferred for physical measurements), normality N (= M × n-factor), ppm.",
+   "Mole fraction is dimensionless and sums to 1; it is used in Raoult's law and for partial pressures (p_i = x_i × p_total)."],
+  ["Solubility",
+   "Solubility of a solid in a liquid depends on nature (like dissolves like), temperature (increases if dissolution is endothermic — Le Chatelier) and is essentially independent of pressure.",
+   "Henry's law for gases: p = K_H × x, where x is the mole fraction of the gas in solution. Solubility decreases as temperature rises, and K_H increases with temperature.",
+   "Applications: carbonated drinks bottled under high CO₂ pressure; scuba divers use air diluted with He to avoid 'the bends' (N₂ bubbles); high altitude → anoxia in climbers.",
+   "K_H is different for each gas and rises with temperature; a higher K_H means lower solubility at a given pressure."],
+  ["Vapour pressure and Raoult's law",
+   "For a solution of volatile liquids, p_total = p₁ + p₂ = x₁p₁° + x₂p₂° (Raoult's law), and y_i (vapour mole fraction) = p_i/p_total.",
+   "For a solution of a non-volatile solute, p_solution = x_solvent × p°_solvent, so the relative lowering of vapour pressure = (p° − p)/p° = x_solute.",
+   "Ideal solutions obey Raoult's law over the whole composition range: ΔH_mix = 0, ΔV_mix = 0, and A–A, B–B and A–B interactions are similar (e.g. n-hexane/n-heptane, benzene/toluene, bromoethane/chloroethane).",
+   "Non-ideal with POSITIVE deviation (A–B weaker than A–A and B–B): higher vapour pressure, ΔH_mix > 0, ΔV_mix > 0, minimum-boiling azeotrope. Examples: ethanol + water, acetone + CS₂, ethyl alcohol + acetone.",
+   "Non-ideal with NEGATIVE deviation (A–B stronger, e.g. H-bonding): lower vapour pressure, ΔH_mix < 0, ΔV_mix < 0, maximum-boiling azeotrope. Examples: chloroform + acetone, HNO₃ + water, phenol + aniline.",
+   "An azeotrope boils at constant composition and cannot be separated by simple fractional distillation (95.6% ethanol–water is a minimum-boiling azeotrope; rectified spirit)."],
+  ["Colligative properties (depend only on the number of solute particles)",
+   "Relative lowering of vapour pressure: (p° − p)/p° = x_solute.",
+   "Elevation of boiling point: ΔT_b = K_b × m. Water K_b = 0.52 K kg mol⁻¹.",
+   "Depression of freezing point: ΔT_f = K_f × m. Water K_f = 1.86 K kg mol⁻¹ — used with ethylene glycol as antifreeze.",
+   "Osmotic pressure: π = CRT = (n/V)RT. Isotonic solutions have equal π; reverse osmosis (p > π) is used for desalination of sea water with a cellulose-acetate membrane.",
+   "All four are used to determine the molar mass of a solute; osmotic pressure is best for biomolecules (macromolecules) because it works at room temperature and gives a measurable value even for very dilute solutions.",
+   "Abnormal molar masses arise from association (fewer particles → i < 1, e.g. ethanoic acid dimerises in benzene) or dissociation/ionisation (more particles → i > 1, e.g. NaCl in water, i ≈ 2)."],
+  ["van't Hoff factor",
+   "i = observed colligative property / calculated colligative property = normal molar mass / abnormal molar mass = actual number of particles after dissociation or association / number before.",
+   "Modified equations: ΔT_b = i K_b m, ΔT_f = i K_f m, π = iCRT, RLVP = i × x_solute.",
+   "For NaCl → Na⁺ + Cl⁻, i = 2 (ideally); for CaCl₂, i = 3; for K₂SO₄, i = 3."]],
+ f:["p_total = x₁p₁° + x₂p₂°","(p° − p)/p° = x_solute = RLVP","ΔT_b = i·K_b·m   (K_b water = 0.52)","ΔT_f = i·K_f·m   (K_f water = 1.86)","π = i·C·R·T","i = normal M / abnormal M","M₂ = (K_f × w₂ × 1000)/(ΔT_f × w₁)","p_gas = K_H × x"],
+ e:{q:"5.85 g NaCl is dissolved in 500 g of water. Calculate the freezing point of the solution. K_f = 1.86 K kg mol⁻¹; assume complete dissociation.",
+   s:["Moles of NaCl = 5.85/58.5 = 0.10 mol; molality m = 0.10/0.500 = 0.20 mol kg⁻¹.",
+      "NaCl → Na⁺ + Cl⁻ gives 2 particles, so i = 2.",
+      "ΔT_f = i K_f m = 2 × 1.86 × 0.20 = 0.744 K.",
+      "Freezing point = 0 − 0.744 = −0.744 °C.",
+      "Forgetting i would give only −0.372 °C — the classic trap in this topic."],
+   a:"Freezing point ≈ −0.744 °C (272.26 K)."}},
+
+{id:"p7",b:"phy",t:"Electrochemistry",off:true,pr:"high",w:7,
+ y:["Galvanic vs electrolytic cells","Standard electrode potential & EMF","Nernst equation","ΔG°, K and E° relations","Conductance, Kohlrausch's law","Faraday's laws, batteries, fuel cells","Corrosion and its prevention"],
+ n:[["Electrochemical cells",
+   "Galvanic (voltaic) cell: a spontaneous redox reaction produces electrical energy (chemical → electrical). Anode is negative and oxidation occurs there; cathode is positive and reduction occurs there.",
+   "Electrolytic cell: external electrical energy drives a non-spontaneous reaction (electrical → chemical). Anode is positive, cathode negative, but oxidation is still at the anode.",
+   "Salt bridge functions: completes the circuit, maintains electrical neutrality of the two half-cells, and minimises the liquid-junction potential. It contains an inert electrolyte such as KCl, KNO₃ or NH₄NO₃ in agar-agar.",
+   "IUPAC cell representation: anode | anode ion (conc) || cathode ion (conc) | cathode. Example: Zn(s)|Zn²⁺(1 M)||Cu²⁺(1 M)|Cu(s).",
+   "EMF E°_cell = E°_cathode − E°_anode = E°_right − E°_left (both as reduction potentials)."],
+  ["Electrode potentials",
+   "Standard hydrogen electrode (SHE) is the reference: Pt|H₂(1 bar)|H⁺(1 M), E° = 0.00 V at all temperatures.",
+   "A positive E° means the species is reduced more readily than H⁺ (a good oxidising agent, e.g. F₂ +2.87 V, Cu²⁺ +0.34 V); a negative E° means it is oxidised more readily (a good reducing agent, e.g. Li −3.05 V, Zn −0.76 V).",
+   "Electrochemical series: metals above hydrogen displace it from acids; a metal lower in the series (more negative E°) displaces one higher (Cu²⁺ is displaced by Zn, not by Ag).",
+   "E° values are intensive — doubling the equation does not change E°."],
+  ["Nernst equation and its consequences",
+   "For Mⁿ⁺ + ne⁻ → M: E = E° − (0.0591/n) log(1/[Mⁿ⁺]) at 298 K.",
+   "For the cell: E_cell = E°_cell − (0.0591/n) log Q.",
+   "At equilibrium E_cell = 0 and Q = K, giving log K = nE°/0.0591.",
+   "ΔG = −nFE_cell and ΔG° = −nF E°_cell (F = 96487 C mol⁻¹). A positive E° ⇒ negative ΔG° ⇒ spontaneous.",
+   "Concentration cells generate EMF purely from a difference in ion concentration.",
+   "The dry-cell, lead-acid and mercury-cell reactions are standard exam questions: lead-acid discharge is Pb + PbO₂ + 2H₂SO₄ → 2PbSO₄ + 2H₂O (E ≈ 2 V, rechargeable, used in vehicles)."],
+  ["Conductance in electrolytic solutions",
+   "Resistance R = ρ l/A; conductance G = 1/R (siemens, S). Conductivity κ = 1/ρ = G × (l/A) = G × cell constant.",
+   "Cell constant = l/A (m⁻¹ or cm⁻¹), determined with a standard KCl solution.",
+   "Molar conductivity Λ_m = κ/C. With C in mol L⁻¹ and κ in S cm⁻¹: Λ_m = 1000κ/C, unit S cm² mol⁻¹.",
+   "On dilution κ decreases (fewer ions per unit volume) but Λ_m increases (less interionic attraction for strong electrolytes; greater degree of dissociation for weak ones).",
+   "Kohlrausch's law of independent migration of ions: at infinite dilution each ion contributes a definite amount to Λ_m° irrespective of its partner → Λ_m° = ν₊λ°₊ + ν₋λ°₋.",
+   "Applications: Λ_m° of a weak electrolyte (CH₃COOH) from strong ones; degree of dissociation α = Λ_m/Λ_m°; dissociation constant Ka = cα²/(1−α); solubility of a sparingly soluble salt s = 1000κ/Λ_m°.",
+   "Debye–Hückel–Onsager equation for strong electrolytes: Λ_m = Λ_m° − A√c."],
+  ["Electrolysis and Faraday's laws",
+   "First law: w = ZIt, where Z is the electrochemical equivalent; w = (M/n) × (It/F) = equivalent mass × It/F.",
+   "Second law: with the same quantity of charge, masses deposited are in the ratio of their equivalent masses.",
+   "1 F = 96487 C deposits 1 gram-equivalent of any substance.",
+   "Product of electrolysis depends on the nature of the electrodes (inert Pt/graphite vs reactive Cu), the standard potentials, and overpotential — e.g. aqueous NaCl with inert electrodes gives Cl₂ at the anode (overvoltage of O₂) and H₂ at the cathode; molten NaCl gives Na and Cl₂; aqueous CuSO₄ with Cu electrodes transfers copper (electrorefining)."],
+  ["Batteries and fuel cells",
+   "Primary (non-rechargeable): dry cell / Leclanché cell — Zn anode, graphite-rod cathode, paste of NH₄Cl + ZnCl₂ with MnO₂, E ≈ 1.5 V. Mercury cell — stable 1.35 V, used in hearing aids and watches.",
+   "Secondary (rechargeable): lead-acid storage battery (2 V per cell, 6 cells = 12 V in cars); Ni–Cd cell (longer life, memory effect).",
+   "Fuel cell: H₂–O₂ cell with KOH electrolyte, converts combustion energy directly into electricity with ~70% efficiency (a heat engine is ~40%); used in the Apollo programme; only product is water. Electrode: anode 2H₂ + 4OH⁻ → 4H₂O + 4e⁻; cathode O₂ + 2H₂O + 4e⁻ → 4OH⁻."],
+  ["Corrosion",
+   "Rusting of iron is an electrochemical process: anodic region Fe → Fe²⁺ + 2e⁻; cathodic region O₂ + 4H⁺ + 4e⁻ → 2H₂O (H⁺ from dissolved CO₂ forming H₂CO₃, or from acidic oxides SO₂/SO₃ in polluted air). Fe²⁺ is then oxidised to Fe₂O₃·xH₂O.",
+   "Prevention: barrier protection (paint, grease, electroplating with Cr/Ni/Sn), galvanisation (coating with Zn — Zn also acts as a sacrificial anode), cathodic protection with a more active metal (Mg or Zn blocks buried near iron pipes/ship hulls), and alloying (stainless steel).",
+   "Zinc protects iron even if the coating is scratched (Zn is more anodic); tin does NOT — a scratched tin coating accelerates rusting because Fe becomes the anode."]],
+ f:["E_cell = E°_cathode − E°_anode","E = E° − (0.0591/n) log Q   at 298 K","ΔG° = −nFE°_cell","log K = nE°_cell / 0.0591","κ = G × (l/A) ; Λ_m = 1000κ/C  (S cm² mol⁻¹)","Λ_m° = ν₊λ°₊ + ν₋λ°₋  (Kohlrausch)","α = Λ_m/Λ_m° ; Ka = cα²/(1−α)","w = (M·I·t)/(n·F) ; 1 F = 96487 C"],
+ e:{q:"Calculate the EMF of Zn(s)|Zn²⁺(0.1 M)||Cu²⁺(0.01 M)|Cu(s) at 298 K. E°(Zn²⁺/Zn) = −0.76 V, E°(Cu²⁺/Cu) = +0.34 V.",
+   s:["E°_cell = 0.34 − (−0.76) = 1.10 V. n = 2 (Zn → Zn²⁺ + 2e⁻).",
+      "Cell reaction: Zn + Cu²⁺ → Zn²⁺ + Cu, so Q = [Zn²⁺]/[Cu²⁺] = 0.1/0.01 = 10.",
+      "E = 1.10 − (0.0591/2) log 10 = 1.10 − 0.02955 × 1 = 1.070 V.",
+      "Sign check: Q > 1 means the cell is less able to drive the reaction, so E < E° ✓."],
+   a:"E_cell = 1.07 V."}},
+
+{id:"p8",b:"phy",t:"Chemical Kinetics",off:true,pr:"high",w:6,
+ y:["Rate law, order and molecularity","Integrated rate equations (zero and first order)","Half-life","Arrhenius equation & activation energy","Collision theory","Factors affecting rate"],
+ n:[["Rate of reaction",
+   "Average rate = −Δ[reactant]/Δt over a finite interval; instantaneous rate = −d[R]/dt at a point (the slope of the concentration–time tangent).",
+   "For aA + bB → cC + dD: rate = −(1/a)d[A]/dt = −(1/b)d[B]/dt = +(1/c)d[C]/dt = +(1/d)d[D]/dt.",
+   "The rate falls as the reaction proceeds because reactant concentrations fall.",
+   "Units of rate: mol L⁻¹ s⁻¹ (or L mol⁻¹ s⁻¹ for gas-phase reactions expressed in partial pressures)."],
+  ["Rate law, order and molecularity",
+   "Rate = k[A]^x[B]^y, where x and y are determined EXPERIMENTALLY, not from stoichiometry.",
+   "Order = x + y; it can be zero, fractional or negative. Molecularity = number of reacting species in an elementary step; it is always a whole number ≥ 1 and has no meaning for a complex reaction (the overall reaction is described by the order).",
+   "Units of k depend on order: zero order mol L⁻¹ s⁻¹; first order s⁻¹; second order L mol⁻¹ s⁻¹; nth order (mol L⁻¹)^(1−n) s⁻¹.",
+   "A pseudo-first-order reaction has one reactant in large excess (acid-catalysed hydrolysis of an ester in water).",
+   "Threshold energy and activation energy E_a = threshold energy − average energy of reactants."],
+  ["Integrated rate equations",
+   "ZERO ORDER: [R] = [R]₀ − kt; a plot of [R] vs t is a straight line with slope −k; t½ = [R]₀/2k (half-life is directly proportional to initial concentration). Example: decomposition of NH₃ on a platinum surface, photochemical H₂ + Cl₂ reaction.",
+   "FIRST ORDER: k = (2.303/t) log([R]₀/[R]); ln[R] = ln[R]₀ − kt, so a plot of ln[R] vs t is linear with slope −k; t½ = 0.693/k and is INDEPENDENT of [R]₀. Examples: radioactive decay, decomposition of N₂O₅ and of H₂O₂.",
+   "For a first-order reaction, the time for 99.9% completion is ten times the half-life; for 75% completion it is two half-lives.",
+   "Second-order and higher integrated forms exist but the syllabus restricts calculations to zero and first order."],
+  ["Temperature dependence and the Arrhenius equation",
+   "k = A e^(−Ea/RT), where A is the frequency (pre-exponential) factor and e^(−Ea/RT) is the fraction of molecules with energy ≥ E_a.",
+   "ln k = ln A − Ea/RT; log k = log A − Ea/2.303RT. A plot of log k vs 1/T is a straight line of slope −Ea/2.303R.",
+   "Comparing two temperatures: log(k₂/k₁) = (Ea/2.303R)(1/T₁ − 1/T₂) = (Ea/2.303R)(T₂ − T₁)/(T₁T₂).",
+   "Temperature coefficient = k(T+10)/k(T), usually 2–3: roughly, the rate doubles for every 10 K rise.",
+   "A catalyst provides an alternative path with a LOWER activation energy; it does not change ΔG or the equilibrium constant, only the time taken to reach equilibrium. It cannot initiate a non-spontaneous reaction.",
+   "Enzymes are highly efficient biological catalysts with an optimum temperature and pH (lock-and-key / induced-fit models)."],
+  ["Collision theory",
+   "Rate = Z × f × P, where Z is the collision frequency, f = e^(−Ea/RT) is the energy factor (fraction of effective collisions), and P is the steric or probability factor (correct orientation).",
+   "For bimolecular gaseous reactions Z is very large (~10²⁵ collisions cm⁻³ s⁻¹), yet most reactions are far slower — most collisions are ineffective.",
+   "Increasing concentration or pressure raises Z; increasing temperature raises both Z and, more importantly, f."]],
+ f:["Rate = k[A]ˣ[B]ʸ","Zero order: [R] = [R]₀ − kt ; t½ = [R]₀/2k","First order: k = (2.303/t) log([R]₀/[R]) ; t½ = 0.693/k","k = A e^(−Ea/RT)","log(k₂/k₁) = (Ea/2.303R)(T₂ − T₁)/(T₁T₂)","t(99.9%) = 10 × t½ ; t(75%) = 2 × t½ (first order)","k units: s⁻¹ (1st), mol L⁻¹ s⁻¹ (0th), L mol⁻¹ s⁻¹ (2nd)"],
+ e:{q:"A first-order reaction is 50% complete in 30 minutes. How long will it take to be 90% complete?",
+   s:["t½ = 30 min → k = 0.693/30 = 0.0231 min⁻¹.",
+      "For 90% completion, [R]₀/[R] = 100/10 = 10.",
+      "t = (2.303/k) log 10 = (2.303/0.0231) × 1 = 99.7 min.",
+      "Sanity check: 99.9% completion needs 10 half-lives = 300 min, so 90% (≈3.32 half-lives) ≈ 100 min ✓."],
+   a:"≈ 100 minutes (99.7 min)."}},
+
+/* ---------------- INORGANIC CHEMISTRY (4 official) ---------------- */
+{id:"i1",b:"ino",t:"Classification of Elements and Periodicity in Properties",off:true,pr:"high",w:5,
+ y:["Modern periodic law and Moseley's work","Blocks and the long form of the table","Trends in atomic/ionic radius","Ionisation enthalpy and its exceptions","Electron gain enthalpy and electronegativity","Nomenclature for Z > 100"],
+ n:[["Historical development",
+   "Döbereiner's triads (1817): the atomic mass of the middle element ≈ mean of the other two — worked only for a few groups.",
+   "Newlands' law of octaves (1866): every eighth element repeated properties; valid only up to calcium.",
+   "Mendeleev (1869): properties are a periodic function of ATOMIC MASS; left gaps and predicted eka-aluminium (gallium) and eka-silicon (germanium); could not explain the position of isotopes or the Ar–K and Co–Ni inversions.",
+   "Moseley (1913): X-ray frequencies gave √ν = a(Z − b), proving atomic NUMBER is the fundamental property → the modern periodic law.",
+   "Modern periodic law: the physical and chemical properties of elements are a periodic function of their atomic numbers.",
+   "Bohr's classification: s, p, d and f blocks based on the subshell receiving the last electron."],
+  ["Structure of the long form",
+   "7 periods (1st = 2 elements, 2nd and 3rd = 8 each, 4th and 5th = 18 each, 6th = 32 including the lanthanoids, 7th incomplete). Period number = principal quantum number of the valence shell.",
+   "18 groups; group number for s- and p-block = number of valence electrons; for d-block = (n−1)d + ns electrons.",
+   "s-block (groups 1, 2): ns¹⁻². p-block (13–18): ns²np¹⁻⁶. d-block (3–12): (n−1)d¹⁻¹⁰ns⁰⁻². f-block: (n−2)f¹⁻¹⁴(n−1)d⁰⁻¹ns², placed separately at the bottom.",
+   "Metals are on the left and centre, non-metals on the right, metalloids along the zig-zag (B, Si, Ge, As, Sb, Te). Metals outnumber non-metals (~70% of elements).",
+   "Elements of the same group have the same valence-shell configuration, hence similar chemical properties; elements of the same period have the same n but different properties."],
+  ["Periodic trends",
+   "ATOMIC RADIUS decreases across a period (increasing nuclear charge with the same shell → greater effective nuclear charge Z_eff) and increases down a group (extra shells outweigh the increased charge). Van der Waals > metallic > covalent radii for the same element. Inert-gas radii are the largest in a period because they are van der Waals radii.",
+   "IONIC RADIUS: a cation is always smaller than its parent atom; an anion is larger. In an isoelectronic series the radius decreases as the atomic number (nuclear charge) increases: N³⁻ > O²⁻ > F⁻ > Na⁺ > Mg²⁺ > Al³⁺.",
+   "IONISATION ENTHALPY increases across a period and decreases down a group. Factors: nuclear charge, atomic size, shielding/screening (s > p > d > f penetrating power, so f-electrons shield poorly), penetration of the orbital, and stability of half-filled/fully-filled configurations.",
+   "Key exceptions: Be > B (2s is more penetrating and lower in energy than 2p); N > O (half-filled 2p³ in N is extra stable); Mg > Al; P > S. Second ionisation enthalpy is always greater than the first (removing an electron from a cation). Na: I₁ low but I₂ very high, hence Na forms Na⁺ not Na²⁺.",
+   "ELECTRON GAIN ENTHALPY becomes more negative across a period and less negative down a group. Noble gases have large POSITIVE values (stable ns²np⁶ configuration). Chlorine has the most negative value, not fluorine — F's tiny size causes strong interelectronic repulsion for the added electron.",
+   "ELECTRONEGATIVITY increases across a period, decreases down a group. Pauling scale: F = 4.0 (highest), Cs/Fr lowest. Electronegativity is not a fixed atomic property — it depends on the partner atom and hybridisation (sp > sp² > sp³ for the same carbon).",
+   "VALENCY = number of valence electrons (groups 1–4) or 8 minus that (groups 5–8). Noble gases: valency 0 (though Xe forms compounds).",
+   "METALLIC character and reducing power decrease across a period; non-metallic character and oxidising power increase. Oxides become less basic and more acidic across a period (Na₂O basic → Al₂O₃ amphoteric → Cl₂O₇ acidic); down a group basicity increases.",
+   "Diagonal relationships: Li–Mg, Be–Al, B–Si (similar size and charge/radius ratio)."],
+  ["Nomenclature of elements with Z > 100",
+   "IUPAC systematic naming uses numerical roots: 0 nil, 1 un, 2 bi, 3 tri, 4 quad, 5 pent, 6 hex, 7 sept, 8 oct, 9 enn, followed by 'ium'.",
+   "Example: Z = 118 gives ununoctium (Uuo), now oganesson (Og). Z = 109 gives unnilennium (Une), now meitnerium (Mt).",
+   "Recently named: 113 nihonium (Nh), 114 flerovium (Fl), 115 moscovium (Mc), 116 livermorium (Lv), 117 tennessine (Ts), 118 oganesson (Og)."]],
+ f:["Z_eff = Z − σ (screening constant)","Isoelectronic radius ∝ 1/Z","√ν = a(Z − b)  (Moseley)","Electronegativity (Mulliken) = (IE + EA)/2","Pauling: F = 4.0 (reference maximum)"],
+ e:{q:"Arrange N³⁻, O²⁻, F⁻, Na⁺, Mg²⁺ and Al³⁺ in order of increasing ionic radius. All have 10 electrons.",
+   s:["All six species are isoelectronic with 10 electrons (like neon).",
+      "For isoelectronic ions the radius is governed by nuclear charge: more protons pull the same 10 electrons in tighter.",
+      "Atomic numbers: N 7, O 8, F 9, Na 11, Mg 12, Al 13.",
+      "Radius therefore decreases in the order N³⁻ > O²⁻ > F⁻ > Na⁺ > Mg²⁺ > Al³⁺."],
+   a:"Increasing radius: Al³⁺ < Mg²⁺ < Na⁺ < F⁻ < O²⁻ < N³⁻."}},
+
+{id:"i2",b:"ino",t:"Chemical Bonding and Molecular Structure",off:true,pr:"high",w:8,
+ y:["Ionic vs covalent character and Fajans' rules","Lewis structures and formal charge","VSEPR shapes","Hybridisation","VBT and MOT","Bond order & magnetic behaviour","Hydrogen bonding","Dipole moment"],
+ n:[["Types of bonding",
+   "Ionic (electrovalent) bond: complete transfer of electrons from a metal (low IE) to a non-metal (high electron affinity); favoured by low ionisation enthalpy of the cation, high electron gain enthalpy of the anion, and high lattice enthalpy. Non-directional, high m.p./b.p., soluble in polar solvents, conduct in the molten/aqueous state.",
+   "Lattice enthalpy is the energy released when gaseous ions form one mole of the solid; it is calculated indirectly by the Born–Haber cycle (Hess's law applied to NaCl formation).",
+   "Covalent bond: mutual sharing of electron pairs (Lewis/Kossel); directional, lower m.p., generally non-conducting.",
+   "Coordinate (dative) bond: both shared electrons come from one atom (donor) — e.g. NH₄⁺, H₃O⁺, SO₄²⁻, O₃.",
+   "Metallic bond: mobile electrons in a 'sea' around positive kernels — explains malleability, ductility, lustre, thermal and electrical conductivity.",
+   "Octet rule limitations: incomplete octet (LiCl, BeH₂, BF₃, AlCl₃), expanded octet (PF₅, SF₆, H₂SO₄ — using d orbitals), odd-electron molecules (NO, NO₂), and it says nothing about molecular shape or bond energies. Noble-gas compounds (XeF₂, XeF₄, XeO₃, KrF₂) break it entirely."],
+  ["Fajans' rules — covalent character in ionic compounds",
+   "Covalent character increases with (i) smaller cation, (ii) larger anion, (iii) higher charge on either ion (greater polarising power / polarisability).",
+   "Consequences: LiCl is more covalent than NaCl; LiI is more covalent than LiF; melting points fall as covalent character rises. A cation with a pseudo-noble-gas (n−1)d¹⁰ configuration (Cu⁺, Ag⁺, Zn²⁺, Cd²⁺, Hg²⁺) polarises far more strongly than one with a noble-gas configuration (Na⁺, Ca²⁺) — hence AgCl is insoluble while NaCl is soluble, and AgI is more covalent than AgCl.",
+   "This also explains why Cu⁺/Ag⁺ salts are often coloured though d¹⁰ ions have no d–d transitions."],
+  ["Lewis structures, formal charge and bond parameters",
+   "Formal charge = (valence electrons of the free atom) − (non-bonding electrons) − ½(bonding electrons). The most stable Lewis structure has formal charges closest to zero and any negative charge on the more electronegative atom.",
+   "For CO₃²⁻ each C–O bond has formal charge distribution 0, −1, −1 spread over three equivalent resonance structures; for O₃ the central O carries +1 and a terminal O −1.",
+   "Bond length decreases with increasing bond order and with greater s-character (sp < sp² < sp³). Bond enthalpy increases with bond order. Bond angle depends on hybridisation and lone-pair repulsion."],
+  ["VSEPR theory",
+   "Shape is decided by the number of electron PAIRS (bond pairs + lone pairs) around the central atom; lp–lp repulsion > lp–bp > bp–bp.",
+   "2 pairs → linear (BeCl₂, CO₂, sp). 3 pairs → trigonal planar (BF₃, sp²); with 1 lp → bent (SnCl₂, SO₂). 4 pairs → tetrahedral (CH₄, sp³); 1 lp → trigonal pyramidal (NH₃, 107°); 2 lp → bent/V-shape (H₂O, 104.5°).",
+   "5 pairs → trigonal bipyramidal (PCl₅, sp³d); lone pairs occupy EQUATORIAL positions (SF₄ seesaw, 2 lp → ClF₃ T-shaped, 3 lp → XeF₂ linear).",
+   "6 pairs → octahedral (SF₆, sp³d²); 1 lp → square pyramidal (BrF₅), 2 lp → square planar (XeF₄).",
+   "Bond-angle reduction from the ideal: CH₄ 109.5° → NH₃ 107° → H₂O 104.5°, because each lone pair compresses the bond pairs."],
+  ["Valence bond theory and hybridisation",
+   "VBT: a covalent bond forms by the overlap of half-filled atomic orbitals containing electrons of opposite spin; greater overlap means a stronger bond. σ bonds are formed by head-on overlap (s–s, s–p, p–p, sp–sp…) and are stronger; π bonds by lateral/sideways overlap of parallel p orbitals and are weaker, and restrict rotation.",
+   "Hybridisation = mixing of atomic orbitals of comparable energy to give equivalent new orbitals. sp (linear, 180°), sp² (trigonal planar, 120°), sp³ (tetrahedral, 109.5°), sp³d (trigonal bipyramidal), sp³d² (octahedral), dsp² (square planar, inner d).",
+   "Hybridisation from steric number = number of σ bonds + number of lone pairs on the central atom.",
+   "Ethene: each C is sp², one C–C σ plus one π; C₂H₄ has 5 σ + 1 π. Ethyne: each C is sp, one σ + two π between the carbons (C₂H₂ has 3 σ + 2 π)."],
+  ["Resonance",
+   "When a single Lewis structure cannot represent the molecule, several canonical (contributing) structures are drawn; the real molecule is a resonance HYBRID of lower energy than any of them. The difference is the resonance stabilisation energy.",
+   "Rules: canonical structures differ only in the position of electrons, never of atoms; all must have the same number of unpaired electrons; structures with fewer formal charges, negative charge on the electronegative atom, and complete octets contribute most.",
+   "Benzene: two Kekulé structures; all six C–C bonds are identical at 139 pm, intermediate between a single (154 pm) and a double (134 pm) bond. Carbonate ion: three equivalent structures, each C–O bond 128 pm."],
+  ["Molecular orbital theory (homonuclear diatomics)",
+   "Atomic orbitals combine linearly (LCAO) to give the same number of molecular orbitals — one bonding (σ, π) and one antibonding (σ*, π*). Antibonding orbitals are destabilised MORE than bonding orbitals are stabilised.",
+   "For O₂ and F₂ (Z ≥ 8) the order is: σ1s < σ*1s < σ2s < σ*2s < σ2p_z < π2p_x = π2p_y < π*2p_x = π*2p_y < σ*2p_z.",
+   "For N₂, C₂, B₂ (Z < 8) σ2p_z lies ABOVE the π2p orbitals — the sequence swaps.",
+   "Bond order = ½(N_b − N_a). H₂ = 1; He₂ = 0 (does not exist); Li₂ = 1; B₂ = 1 and PARAMAGNETIC (two unpaired electrons in the two degenerate π2p orbitals); C₂ = 2 (diamagnetic); N₂ = 3 (diamagnetic, very stable, bond length 110 pm); O₂ = 2 but PARAMAGNETIC with two unpaired electrons in π* — this is the classic success of MOT, which Lewis structures cannot explain; O₂⁺ = 2.5; F₂ = 1; Ne₂ = 0.",
+   "Higher bond order → shorter bond length → higher bond dissociation enthalpy → greater stability. Bond order 0 or negative → molecule does not exist (He₂, Be₂, Ne₂)."],
+  ["Hydrogen bonding and dipole moment",
+   "H-bonding needs H attached to a small, highly electronegative atom (F, O, N). It is stronger than van der Waals forces but weaker than a covalent bond (~5–30 kJ mol⁻¹).",
+   "Intermolecular (between molecules): HF, H₂O, NH₃, alcohols, carboxylic acids (which dimerise in the vapour and in benzene) → higher b.p. and viscosity. F forms the strongest H-bond, so HF has the strongest H-bonding; but ice's open cage structure makes it less dense than water, which is why ice floats and lakes freeze from the top down.",
+   "Intramolecular (within the same molecule): o-nitrophenol (chelation) — makes it steam-volatile and lower-melting than the para isomer, which H-bonds intermolecularly.",
+   "H-bonding explains the high b.p. of HF, H₂O and NH₃ relative to their hydride homologues (the 'abnormal' first member of each series), the solubility of lower alcohols in water, the α-helix and β-sheet structures of proteins, and base pairing in DNA.",
+   "Dipole moment μ = q × d (debye, D; 1 D = 3.336 × 10⁻³⁰ C m). It is a vector quantity: μ = 0 for symmetric molecules (CO₂, CCl₄, BF₃, benzene, trans-2-butene) even though individual bonds are polar; cis-2-butene has μ > 0, which distinguishes geometric isomers. p-dichlorobenzene has μ = 0 while the ortho and meta isomers differ — used to separate them.",
+   "% ionic character = (observed μ / calculated μ for full charge separation) × 100."]],
+ f:["Formal charge = V − L − ½B","Steric number = σ bonds + lone pairs","Bond order = ½(N_bonding − N_antibonding)","μ = q × d  (1 D = 3.336 × 10⁻³⁰ C m)","% ionic character = (μ_obs/μ_calc) × 100","Magnetic moment μ = √(n(n+2)) BM"],
+ e:{q:"Using MOT, show why O₂ is paramagnetic and find its bond order.",
+   s:["O₂ has 16 electrons. Using the Z ≥ 8 ordering: σ1s² σ*1s² σ2s² σ*2s² σ2p_z² π2p_x² π2p_y² π*2p_x¹ π*2p_y¹.",
+      "Count bonding electrons: σ1s(2) + σ2s(2) + σ2p_z(2) + π2p_x(2) + π2p_y(2) = 10 bonding.",
+      "Antibonding N_a = σ*1s(2) + σ*2s(2) + π*2p_x(1) + π*2p_y(1) = 6.",
+      "Bond order = ½(10 − 6) = 2, consistent with a double bond and a bond length of 121 pm.",
+      "The two degenerate π* orbitals each hold one electron with parallel spins (Hund's rule) → two unpaired electrons."],
+   a:"Bond order = 2 and O₂ has 2 unpaired electrons, so it is paramagnetic — a result Lewis structures fail to predict."}},
+
+{id:"i3",b:"ino",t:"d- and f-Block Elements",off:true,pr:"high",w:7,
+ y:["General electronic configuration","Variable oxidation states & interstitial compounds","Colour and magnetic behaviour","Catalytic properties & alloys","K₂Cr₂O₇ and KMnO₄ — preparation and oxidising action","Lanthanoid contraction and its consequences","Actinoids vs lanthanoids"],
+ n:[["Position and general features",
+   "d-block: groups 3–12, general configuration (n−1)d¹⁻¹⁰ns⁰⁻²; four series — 3d (Sc to Zn), 4d (Y to Cd), 5d (La, Hf to Hg/Au), 6d (Ac, Rf onwards). Zn, Cd and Hg have completely filled d orbitals, so they are not typical transition elements ('pseudo-transition'), which is why they are colourless, diamagnetic and have low melting points.",
+   "f-block: lanthanoids (4f, Ce to Lu) and actinoids (5f, Th to Lr), placed separately to keep the table compact; general configuration (n−2)f¹⁻¹⁴(n−1)d⁰⁻¹ns².",
+   "Transition elements have high melting/boiling points (strong metallic bonding involving both (n−1)d and ns electrons), high enthalpy of atomisation, high density, and are hard with high tensile strength.",
+   "Note: the syllabus specifies FIRST-ROW (3d) transition metals for trends — Cr, Mn, Fe, Co, Ni, Cu, Zn anomalies are the usual questions."],
+  ["Characteristic properties",
+   "VARIABLE OXIDATION STATES because (n−1)d and ns energy levels are very close; the number of oxidation states is greatest in the middle of a series (Mn shows +2 to +7). Lower oxidation states are stabilised by ligands that can accept π electron density; higher ones by O and F (e.g. MnO₄⁻, CrO₄²⁻, VF₅ but not VCl₅).",
+   "Standard electrode potentials: irregular because they depend on the sum of atomisation enthalpy, ionisation enthalpy and hydration enthalpy. Cr³⁺/Cr²⁺ is −0.41 V (Cr²⁺ is a strong REDUCING agent, easily oxidised to the stable d³ t₂g³ configuration) while Mn³⁺/Mn²⁺ is +1.51 V (Mn³⁺ is a strong OXIDISING agent, reduced to stable d⁵ half-filled Mn²⁺). Copper's positive E° (+0.34 V for Cu²⁺/Cu) reflects its high atomisation enthalpy and low hydration enthalpy, so it does not liberate H₂ from acids — only oxidising acids.",
+   "COLOUR: due to d–d transitions — light is absorbed to promote an electron within the split d orbitals and the complementary colour is seen. Depends on the oxidation state, the ligand and the geometry. Ions with d⁰ (Sc³⁺, Ti⁴⁺) or d¹⁰ (Zn²⁺, Cu⁺, Ag⁺) configurations are COLOURLESS. Colour may also arise from charge transfer (the intense purple of MnO₄⁻ and yellow of CrO₄²⁻ are ligand-to-metal charge transfer, not d–d, since Mn is d⁰ and Cr⁶⁺ is d⁰).",
+   "MAGNETIC PROPERTIES: paramagnetism arises from unpaired electrons, μ = √(n(n+2)) BM; diamagnetism when all electrons are paired. Fe³⁺ (d⁵) has μ = 5.92 BM. Ferromagnetism (Fe, Co, Ni) arises from domain alignment.",
+   "CATALYTIC PROPERTIES: due to variable oxidation states and large surface area — Fe in Haber's process, V₂O₅ in the Contact process, Pt/Rh in Ostwald's process, Ni in hydrogenation of oils, MnO₂ in the decomposition of KClO₃, TiCl₃ + Al(CH₃)₃ (Ziegler–Natta) for polythene.",
+   "INTERSTITIAL COMPOUNDS: small atoms (H, C, B, N) occupy the voids in the metal lattice — non-stoichiometric, very hard, high melting, retain metallic conductivity but are less malleable (e.g. TiC, Fe₃H, Mn₄N, TiH₁.₇).",
+   "ALLOY FORMATION: similar atomic radii (within ~15%) allow substitutional alloys — ferrous and non-ferrous alloys, brass (Cu–Zn), bronze (Cu–Sn), stainless steel (Fe–Cr–Ni), amalgams with Hg.",
+   "COMPLEX FORMATION: small size, high charge and available vacant d orbitals make transition metals excellent complex-formers — the basis of qualitative analysis, metal extraction and many industrial processes."],
+  ["Potassium dichromate",
+   "Prepared from chromite ore FeCr₂O₄ (or FeO·Cr₂O₃): fused with Na₂CO₃ in excess air → sodium chromate (yellow) → acidified with H₂SO₄ → sodium dichromate → treated with KCl → K₂Cr₂O₇ (less soluble, orange-red crystals).",
+   "4FeCr₂O₄ + 8Na₂CO₃ + 7O₂ → 8Na₂CrO₄ + 2Fe₂O₃ + 8CO₂ ; 2Na₂CrO₄ + H₂SO₄ → Na₂Cr₂O₇ + Na₂SO₄ + H₂O ; Na₂Cr₂O₇ + 2KCl → K₂Cr₂O₇ + 2NaCl.",
+   "Chromate–dichromate equilibrium is pH-dependent: Cr₂O₇²⁻ (orange) + H₂O ⇌ 2CrO₄²⁻ (yellow) + 2H⁺. Acid → orange; alkali → yellow. This interconversion is a favourite exam question.",
+   "Oxidising action in ACIDIC medium only: Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O, E° = +1.33 V. It oxidises I⁻ → I₂, Fe²⁺ → Fe³⁺, S²⁻ → S, SO₃²⁻ → SO₄²⁻. It is NOT an oxidant in neutral/alkaline solution. Used in volumetric analysis (with diphenylamine or sodium diphenylamine sulphonate indicator) and in the leather industry.",
+   "Structure: two CrO₄ tetrahedra sharing one oxygen corner (Cr–O–Cr bridge), Cr in +6 oxidation state (d⁰)."],
+  ["Potassium permanganate",
+   "Prepared from pyrolusite MnO₂: fused with KOH in air (or with KNO₃/KClO₃ as oxidant) → K₂MnO₄ (green) → oxidised electrolytically, or by disproportionation in neutral/acidic solution, to KMnO₄ (purple).",
+   "2MnO₂ + 4KOH + O₂ → 2K₂MnO₄ + 2H₂O ; 3MnO₄²⁻ + 4H⁺ → 2MnO₄⁻ + MnO₂ + 2H₂O (disproportionation) ; 2K₂MnO₄ + Cl₂ → 2KMnO₄ + 2KCl.",
+   "Oxidising action in acid medium: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O, E° = +1.51 V — a very strong oxidant. Oxidises Fe²⁺ → Fe³⁺, oxalate → CO₂, I⁻ → I₂, H₂S → S, SO₃²⁻ → SO₄²⁻, thiosulphate → SO₄²⁻.",
+   "In neutral/faintly alkaline medium: MnO₄⁻ + 2H₂O + 3e⁻ → MnO₂ + 4OH⁻ (E° = +0.59 V); in strong alkali: MnO₄⁻ + e⁻ → MnO₄²⁻.",
+   "KMnO₄ is a self-indicator — the faint pink of one excess drop marks the endpoint. It is not used as a primary standard (it slowly decomposes and oxidises organic matter/Cl⁻), so solutions are standardised against oxalic acid or Mohr's salt.",
+   "Structure: tetrahedral, Mn in +7 (d⁰); the purple colour is charge-transfer in origin.",
+   "Oxalic acid titration with KMnO₄ needs heating to ~60 °C and is autocatalytic (the Mn²⁺ produced catalyses it)."],
+  ["Lanthanoids",
+   "General configuration [Xe]4f⁰⁻¹⁴5d⁰⁻¹6s²; common oxidation state +3 (the most stable), with +2 and +4 also seen where a f⁰, f⁷ or f¹⁴ configuration results (Ce⁴⁺ f⁰ is a good oxidant; Eu²⁺ f⁷ and Yb²⁺ f¹⁴ are stable; Tb⁴⁺ f⁷).",
+   "Properties: silvery-white reactive metals, similar to Ca; react slowly with cold and rapidly with hot water; form oxides M₂O₃, halides MX₃, hydrides, carbides, nitrides. Ln³⁺ ions are coloured and paramagnetic due to f electrons (except La³⁺ f⁰ and Lu³⁺ f¹⁴, which are colourless and diamagnetic).",
+   "f orbitals are deeply buried and shielded, so lanthanoid complexes are few and mainly ionic; their colour comes from f–f transitions which are little affected by the ligand (unlike d–d transitions).",
+   "LANTHANOID CONTRACTION: the steady decrease in atomic/ionic radii from La to Lu. Cause: the 4f electrons shield the nuclear charge very poorly (f shielding < d < p < s), so the effective nuclear charge felt by the outer electrons rises across the series.",
+   "Consequences: (i) Zr and Hf, and Nb and Ta, have nearly identical radii and chemistry, so they occur together and are extremely difficult to separate; (ii) separation of the lanthanoids themselves is difficult (though ion-exchange and solvent extraction now work); (iii) basicity of the hydroxides decreases from La(OH)₃ to Lu(OH)₃; (iv) density increases; (v) the 4d and 5d series elements after the lanthanoids (Hf onwards) are more similar to their 3d congeners than expected."],
+  ["Actinoids",
+   "General configuration [Rn]5f¹⁻¹⁴6d⁰⁻¹7s². ALL are radioactive; those beyond uranium are synthetic (transuranium elements).",
+   "Show a much wider range of oxidation states (+3 to +7) than the lanthanoids, because the 5f, 6d and 7s orbitals are closer in energy and the 5f orbitals are less effectively shielded / more extended, so they can participate in bonding.",
+   "ACTINOID CONTRACTION is GREATER per element than lanthanoid contraction (poorer shielding by 5f than by 4f), which makes separating the actinoids still harder.",
+   "Comparison with lanthanoids: actinoids are more reactive (especially with the lighter ones), their complexes show more covalent character, they are strongly paramagnetic (though less than calculated due to spin–orbit coupling), and they have a greater tendency to form complexes.",
+   "Important elements: Th (thorium), U (uranium, used as nuclear fuel; UF₆ in isotope separation), Pu (plutonium, weapons and reactors), Am, Cm. Uranium is used in the gaseous-diffusion separation of ²³⁵U as UF₆."]],
+ f:["Magnetic moment μ = √(n(n+2)) BM","Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O   (E° = 1.33 V)","MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O   (E° = 1.51 V)","Cr₂O₇²⁻ + H₂O ⇌ 2CrO₄²⁻ + 2H⁺  (pH-dependent)","Equivalent mass of KMnO₄ in acid = M/5 ; of K₂Cr₂O₇ = M/6"],
+ e:{q:"Why is Cu²⁺ (aq) coloured while Sc³⁺ and Zn²⁺ are colourless, and why is MnO₄⁻ intensely purple although Mn is d⁰?",
+   s:["Colour from d–d transitions requires a PARTIALLY filled d subshell: an electron must be able to jump between split d levels by absorbing visible light.",
+      "Sc³⁺ is 3d⁰ and Zn²⁺ is 3d¹⁰ — no vacant-occupied d pair is available, so no d–d transition and no colour.",
+      "Cu²⁺ is 3d⁹, partially filled, so a d–d transition is possible → it absorbs in the red and appears blue.",
+      "In MnO₄⁻ manganese is +7 (3d⁰), so d–d transitions are impossible. The intense purple comes instead from LIGAND-TO-METAL CHARGE TRANSFER: an electron on oxygen is momentarily transferred to Mn, and this transition absorbs strongly in the visible region.",
+      "The same argument explains the yellow of CrO₄²⁻/Cr₂O₇²⁻ (Cr⁶⁺, d⁰)."],
+   a:"Cu²⁺ is coloured by d–d transitions (d⁹); Sc³⁺/Zn²⁺ are colourless (d⁰/d¹⁰); MnO₄⁻ is coloured by charge transfer, not d–d."}},
+
+{id:"i4",b:"ino",t:"Coordination Compounds",off:true,pr:"high",w:8,
+ y:["Werner's theory","Ligand types, coordination number, oxidation state","IUPAC nomenclature","Isomerism (structural & stereo)","VBT and hybridisation","CFT, Δo/Δt, spectrochemical series, high/low spin","Colour and magnetic behaviour","Importance in analysis, metallurgy and biology"],
+ n:[["Basic terms and Werner's theory",
+   "A coordination entity consists of a central metal atom/ion bonded to a fixed number of ligands by coordinate bonds; it may be cationic ([Co(NH₃)₆]³⁺), anionic ([Fe(CN)₆]⁴⁻) or neutral ([Ni(NH₃)₂Cl₂]).",
+   "Werner's theory: metals show two kinds of valency — PRIMARY (ionisable, = oxidation state, satisfied by anions, shown outside the square bracket) and SECONDARY (non-ionisable, = coordination number, satisfied by anions or neutral molecules, shown inside the bracket, and directed in space giving a definite geometry).",
+   "Ligand = the donor atom/molecule with at least one lone pair. Unidentate (H₂O, NH₃, Cl⁻), didentate (en = ethane-1,2-diamine, oxalate C₂O₄²⁻, glycinato), polydentate (EDTA⁴⁻ hexadentate, triethylenetetramine), AMBIDENTATE — two different donor atoms but only one binds at a time (SCN⁻ via S = thiocyanato or via N = isothiocyanato; NO₂⁻ via N = nitro or via O = nitrito) → these give LINKAGE ISOMERS.",
+   "Chelate ligands form rings with the metal; chelation greatly increases stability (the CHELATE EFFECT) — e.g. [Ni(en)₃]²⁺ is far more stable than [Ni(NH₃)₆]²⁺. Macrocyclic ligands are more stable still (the macrocyclic effect); haem, chlorophyll and vitamin B₁₂ are natural macrocycles.",
+   "COORDINATION NUMBER = number of ligand donor atoms directly bonded to the metal. Common values: 4 (tetrahedral or square planar) and 6 (octahedral); 2 (linear, e.g. [Ag(NH₃)₂]⁺), 5 (trigonal bipyramidal or square pyramidal) are rarer.",
+   "Oxidation state of the metal = the charge left after removing all ligands along with the electron pairs they shared. Charge on the complex ion = oxidation state + sum of ligand charges.",
+   "Coordination sphere (inside the brackets) does not ionise; the counter ions outside do. [Co(NH₃)₅Cl]Cl₂ gives 3 ions and only 2 of the chlorides are precipitated by AgNO₃ — the classic test for ionisation isomerism."],
+  ["IUPAC nomenclature",
+   "Cation named before anion. Within the complex: ligands alphabetically (by ligand name, ignoring prefixes), then the metal.",
+   "Neutral ligands keep their molecular name (aqua, ammine, carbonyl, phosphine); anionic ligands end in -o (chlorido, cyanido, hydroxido, oxalato, nitrito-O/nitro-N); cationic ligands end in -ium (hydrazinium).",
+   "Numerical prefixes di, tri, tetra, penta, hexa; but if the ligand name itself contains a number, use bis, tris, tetrakis with the ligand in parentheses — e.g. [Pt(en)₂Cl₂]Cl₂ = dichloridobis(ethane-1,2-diamine)platinum(IV) chloride.",
+   "Oxidation state in Roman numerals in parentheses. If the complex is ANIONIC, the metal name takes -ate: ferrate, cuprate, argentate, aurate, plumbate, stannate, platinate, cobaltate, chromate, nickelate, zincate, manganate. (Note: iron → ferrate, copper → cuprate, silver → argentate, gold → aurate, tin → stannate, lead → plumbate.)",
+   "Examples: [Cu(NH₃)₄]SO₄ = tetraamminecopper(II) sulphate; K₄[Fe(CN)₆] = potassium hexacyanidoferrate(II); K₃[Fe(CN)₆] = potassium hexacyanidoferrate(III); [Co(NH₃)₆]Cl₃ = hexaamminecobalt(III) chloride; [Pt(NH₃)₂Cl₂] = diamminedichloridoplatinum(II); Ni(CO)₄ = tetracarbonylnickel(0).",
+   "Bridging ligands between two metal centres are prefixed by μ- (e.g. μ-oxo, μ-hydroxo)."],
+  ["Isomerism",
+   "STRUCTURAL: (i) IONISATION — exchange of a ligand with a counter ion, giving different ions in solution: [Co(NH₃)₅Br]SO₄ (gives SO₄²⁻, white ppt with BaCl₂) vs [Co(NH₃)₅SO₄]Br (gives Br⁻, pale yellow ppt with AgNO₃). (ii) SOLVATE/HYDRATE — water inside or outside the coordination sphere: [Cr(H₂O)₆]Cl₃ (violet, 3 Cl⁻ ionisable), [Cr(H₂O)₅Cl]Cl₂·H₂O (blue-green, 2 Cl⁻), [Cr(H₂O)₄Cl₂]Cl·2H₂O (dark green, 1 Cl⁻). (iii) LINKAGE — from ambidentate ligands: [Co(NH₃)₅(NO₂)]Cl₂ exists as the yellow nitrito-N (nitro) and the red nitrito-O form. (iv) COORDINATION — interchange of ligands between cationic and anionic entities: [Co(NH₃)₆][Cr(CN)₆] vs [Cr(NH₃)₆][Co(CN)₆].",
+   "STEREOISOMERISM (same bonds, different arrangement): GEOMETRICAL (cis/trans) occurs in square-planar complexes of the type MA₂B₂ — cis- and trans-[Pt(NH₃)₂Cl₂], the famous anticancer drug cisplatin being the cis form — and in octahedral MA₄B₂ and MA₃B₃ (facial fac and meridional mer isomers). Tetrahedral complexes show NO geometrical isomerism because all positions are equivalent. OPTICAL isomerism occurs in complexes lacking a plane of symmetry: octahedral complexes with bidentate ligands such as [Co(en)₃]³⁺ and cis-[Co(en)₂Cl₂]⁺ (the trans form is optically inactive), and in tetrahedral complexes with four different unsymmetrical ligands.",
+   "Number of isomers can be predicted from geometry — a common exam question. Note that [M(AA)₂X₂] type (AA = symmetrical bidentate) gives three isomers: cis-d (optically active pair) and trans (inactive)."],
+  ["Bonding — Valence Bond Theory",
+   "The metal ion uses vacant orbitals of equal energy, hybridised under the influence of the ligands, which donate electron pairs. Inner-orbital (uses (n−1)d, low-spin) vs outer-orbital (uses nd, high-spin) complexes.",
+   "Coordination number 4 → sp³ (tetrahedral, e.g. [NiCl₄]²⁻ paramagnetic) or dsp² (square planar, e.g. [Ni(CN)₄]²⁻ diamagnetic — CN⁻ pairs up the two 3d electrons of Ni²⁺, freeing a d orbital). Coordination number 6 → d²sp³ (inner orbital, e.g. [Fe(CN)₆]³⁻, [Co(NH₃)₆]³⁺) or sp³d² (outer orbital, e.g. [FeF₆]³⁻, [CoF₆]³⁻).",
+   "Magnetic moment predicted by μ = √(n(n+2)) BM from the number of unpaired electrons; this is how VBT distinguishes high-spin from low-spin.",
+   "Limitations of VBT: it does not explain the COLOUR of complexes, does not quantify stability, cannot predict which complexes will be tetrahedral vs square planar, and treats ligand effects only qualitatively (it cannot explain why CN⁻ pairs electrons but F⁻ does not)."],
+  ["Bonding — Crystal Field Theory",
+   "Ligands are treated as point negative charges (or dipoles) whose electrostatic field SPLITS the degenerate d orbitals; the theory is purely electrostatic and ignores covalency (which ligand field theory adds).",
+   "OCTAHEDRAL field: the d_z² and d_x²−y² orbitals point directly at the ligands, so they are raised in energy by +0.6Δo (the e_g set); d_xy, d_yz, d_zx point between the ligands and are lowered by −0.4Δo (the t₂g set). Splitting energy Δo.",
+   "TETRAHEDRAL field: the splitting is inverted (e set lower, t₂ set higher) and smaller: Δt = (4/9)Δo. Because Δt is always small, tetrahedral complexes are almost invariably HIGH-SPIN and no low-spin tetrahedral complexes are known.",
+   "SQUARE PLANAR: derived from octahedral by removing the two z-axis ligands; d_x²−y² is highest. Favourable for d⁸ ions with strong-field ligands — Ni²⁺, Pd²⁺, Pt²⁺, Au³⁺, Cu²⁺, Rh⁺, Ir⁺.",
+   "SPECTROCHEMICAL SERIES (increasing Δ): I⁻ < Br⁻ < S²⁻ < SCN⁻ < Cl⁻ < NO₃⁻ < F⁻ < OH⁻ < C₂O₄²⁻ < H₂O < NCS⁻ < NH₃ < en < bpy < phen < NO₂⁻ < PPh₃ < CN⁻ < CO. Ligands to the left of H₂O are weak-field; to the right are strong-field.",
+   "HIGH-SPIN vs LOW-SPIN: electrons fill singly (Hund) until pairing becomes unavoidable. If Δo < P (pairing energy) → high-spin (weak-field ligands, e.g. F⁻, H₂O); if Δo > P → low-spin (strong-field, e.g. CN⁻, CO, NH₃ for Co³⁺). Example: [Fe(H₂O)₆]³⁺ is high-spin d⁵ (5 unpaired, μ = 5.92 BM) while [Fe(CN)₆]³⁻ is low-spin d⁵ (1 unpaired, μ = 1.73 BM).",
+   "CRYSTAL FIELD STABILISATION ENERGY CFSE = [−0.4 n(t₂g) + 0.6 n(e_g)]Δo + P·(number of pairs formed). d³, d⁸ and low-spin d⁶ have especially large CFSE, which explains their extra stability.",
+   "COLOUR: the complex absorbs light of energy Δo to promote an electron from t₂g to e_g, and we see the complementary colour. Δo depends on the ligand (spectrochemical series), the oxidation state (higher charge → larger Δo) and the metal/period (4d, 5d → larger Δo). [Ti(H₂O)₆]³⁺ is purple, absorbing green-yellow at ~20,000 cm⁻¹ (~498 nm).",
+   "Limitations of CFT: it ignores covalent bonding, cannot explain the position of ligands in the spectrochemical series (why CO and CN⁻ are so strong — this needs π-back-bonding, i.e. MOT), and treats the metal–ligand interaction as purely electrostatic."],
+  ["Stability and factors affecting it",
+   "Stability constants: stepwise (K₁, K₂…) and overall (β). Higher K means a more stable complex. [Cu(NH₃)₄]²⁺ log β₄ ≈ 12; [Cd(NH₃)₄]²⁺ log β₄ ≈ 7 — Cu²⁺ binds ammonia more strongly, which is used in qualitative analysis.",
+   "Factors: (i) higher charge and smaller size of the metal ion (higher charge density); (ii) for a given metal, 3d < 4d < 5d generally for soft ligands; (iii) basic strength of the ligand; (iv) CHELATION and ring size — five- and six-membered rings are most stable; (v) macrocyclic effect.",
+   "Thermodynamic stability (extent of complexation) and kinetic stability (rate of ligand exchange, i.e. labile vs inert) are independent: [Ni(CN)₄]²⁻ exchanges rapidly yet is thermodynamically very stable."],
+  ["Importance",
+   "QUALITATIVE ANALYSIS: dimethylglyoxime gives a bright red precipitate with Ni²⁺; the deep blue of [Cu(NH₃)₄]²⁺ confirms Cu²⁺; [Fe(CN)₆]³⁻/⁴⁻ give Prussian blue and Turnbull's blue with Fe²⁺/Fe³⁺.",
+   "EXTRACTION/METALLURGY: silver and gold are leached as [Ag(CN)₂]⁻ and [Au(CN)₂]⁻ in the cyanide process and then displaced with zinc; nickel is purified as volatile Ni(CO)₄ in the Mond process (formation at 330–350 K, decomposition at 450–470 K); cobalt is separated from nickel in the nitrite process.",
+   "PHOTOGRAPHY: unexposed AgBr is removed by 'fixing' with sodium thiosulphate (hypo), forming soluble [Ag(S₂O₃)₂]³⁻.",
+   "BIOLOGY: haemoglobin (Fe complex with porphyrin), chlorophyll (Mg–porphyrin), vitamin B₁₂ (cobalamin, a Co complex — the only natural Co compound), the oxygen-transport protein haemocyanin (Cu), insulin (Zn), nitrogenase (Mo–Fe–S), and Ca–EDTA for lead poisoning.",
+   "MEDICINE: cisplatin cis-[Pt(NH₃)₂Cl₂] for cancer (the trans isomer is inactive — a beautiful illustration of geometric isomerism); EDTA chelation therapy for heavy-metal poisoning; [PtCl₄]²⁻ based drugs.",
+   "INDUSTRY & ANALYSIS: Wilkinson's catalyst [(Ph₃P)₃RhCl] for hydrogenation of alkenes; Ziegler–Natta TiCl₄/Al(C₂H₅)₃ for polythene; Mond's process; electroplating baths ([Ag(CN)₂]⁻, [Au(CN)₂]⁻, [Cu(CN)₄]²⁻) give smooth adherent deposits; hardness of water estimated by EDTA titration; masking agents in analysis.",
+   "Catalysis in general: homogeneous catalysis by metal complexes (Wacker process, hydroformylation/oxo process with Co carbonyls)."]],
+ f:["Charge on complex = oxidation state + Σ ligand charges","μ_spin-only = √(n(n+2)) BM","Δt = (4/9)Δo","CFSE = [−0.4 n(t₂g) + 0.6 n(e_g)]Δo","Δo = hc/λ_absorbed ; E = hc/λ","log β overall = log K₁ + log K₂ + …"],
+ e:{q:"For [Fe(H₂O)₆]³⁺ and [Fe(CN)₆]³⁻, state the hybridisation, spin state, magnetic moment and CFSE (Fe³⁺ is 3d⁵).",
+   s:["Fe³⁺ = [Ar]3d⁵. H₂O is a weak-field ligand (below NH₃ in the series), so Δo < P: electrons stay unpaired → high-spin t₂g³e_g², 5 unpaired electrons.",
+      "High-spin d⁵ uses the OUTER 4d orbitals → sp³d² hybridisation, octahedral.",
+      "μ = √(5 × 7) = √35 = 5.92 BM (paramagnetic).",
+      "CFSE = [−0.4(3) + 0.6(2)]Δo = (−1.2 + 1.2)Δo = 0 — no crystal field stabilisation at all, which is why high-spin d⁵ complexes are so labile.",
+      "CN⁻ is a very strong-field ligand, Δo > P: the five electrons pair into t₂g⁵e_g⁰ → low-spin, 1 unpaired electron, inner d²sp³ hybridisation.",
+      "μ = √(1 × 3) = √3 = 1.73 BM; CFSE = [−0.4(5) + 0]Δo = −2.0Δo (+ one pairing penalty), so it is far more stable and kinetically inert.",
+      "Colour differs too: [Fe(H₂O)₆]³⁺ pale violet/yellow-brown vs [Fe(CN)₆]³⁻ deep red-brown, because Δo — and hence the absorbed wavelength — differs."],
+   a:"[Fe(H₂O)₆]³⁺: sp³d², high-spin, μ = 5.92 BM, CFSE = 0. [Fe(CN)₆]³⁻: d²sp³, low-spin, μ = 1.73 BM, CFSE = −2.0Δo before pairing-energy corrections."}},
+
+/* ---------------- ORGANIC CHEMISTRY (7 official) ---------------- */
+{"id": "o1", "b": "org", "t": "Organic Chemistry — Basic Principles and Techniques", "off": true, "pr": "medium", "w": 0, "y": ["IUPAC naming; inductive, resonance and hyperconjugation effects"], "n": [["Revision essentials", "IUPAC naming; inductive, resonance and hyperconjugation effects", "Homolytic cleavage gives radicals; heterolytic cleavage gives ions. Electrophiles accept an electron pair; nucleophiles donate it.", "Carbocation stability usually follows benzylic/allylic resonance stabilisation and 3° > 2° > 1° for simple alkyl cations. Carbanions show the opposite alkyl trend.", "Purification: crystallisation, sublimation, distillation, differential extraction and chromatography. Lassaigne tests detect N, S and halogens after sodium fusion."]], "f": ["DBE = (2C + 2 + N − H − X)/2", "Acidity increases when the conjugate base is stabilised."], "e": {"q": "Why is phenol more acidic than ethanol?", "s": ["Phenoxide delocalises negative charge into the aromatic ring.", "Ethoxide has no corresponding resonance stabilisation."], "a": "Phenol is more acidic; its conjugate base is better stabilised."}},
+{"id": "o2", "b": "org", "t": "Hydrocarbons", "off": true, "pr": "medium", "w": 0, "y": ["Alkanes undergo free-radical substitution; initiation, propagation and termination explain chlorination."], "n": [["Revision essentials", "Alkanes undergo free-radical substitution; initiation, propagation and termination explain chlorination.", "Alkenes undergo electrophilic addition. Markovnikov orientation follows the more stable carbocation pathway.", "The peroxide effect applies to HBr addition, not to HCl or HI under the standard NCERT treatment.", "Terminal alkynes are weakly acidic because an sp carbon stabilises the conjugate base. Benzene undergoes electrophilic aromatic substitution rather than facile addition."]], "f": ["Acyclic alkane CₙH₂ₙ₊₂; monoalkene CₙH₂ₙ; monoalkyne CₙH₂ₙ₋₂", "Aromatic Hückel rule: cyclic, planar, conjugated, (4n + 2) π electrons"], "e": {"q": "What forms when propene reacts with HBr in the presence of peroxide?", "s": ["A radical chain mechanism operates.", "Br adds so that the more stable secondary carbon radical forms."], "a": "1-bromopropane, the anti-Markovnikov product."}},
+{"id": "o3", "b": "org", "t": "Haloalkanes and Haloarenes", "off": true, "pr": "medium", "w": 0, "y": ["SN2 is concerted, favours unhindered substrates and gives inversion at a stereogenic reacting centre."], "n": [["Revision essentials", "SN2 is concerted, favours unhindered substrates and gives inversion at a stereogenic reacting centre.", "SN1 proceeds through a carbocation, favours stable carbocations and often gives partial racemisation.", "Elimination competes with substitution; alcoholic KOH promotes dehydrohalogenation while aqueous KOH favours substitution.", "Aryl halides resist ordinary SN1/SN2 because the C–X bond has partial double-bond character and the carbon is sp². Electron-withdrawing ortho/para substituents can activate nucleophilic aromatic substitution."]], "f": ["Simple SN2 reactivity: methyl > 1° > 2° ≫ 3°", "Simple SN1 reactivity: 3° > 2° > 1°"], "e": {"q": "Why does chlorobenzene hydrolyse less readily than chloroethane?", "s": ["Lone-pair conjugation gives the aryl C–Cl bond partial double-bond character.", "SN2 backside attack is disfavoured at an aryl carbon; a phenyl cation is very unstable."], "a": "Its bonding and aryl geometry resist the ordinary substitution pathways."}},
+{"id": "o4", "b": "org", "t": "Alcohols, Phenols and Ethers", "off": true, "pr": "medium", "w": 0, "y": ["Alcohols show hydrogen bonding. Primary alcohols oxidise to aldehydes then acids; secondary alcohols to ketones."], "n": [["Revision essentials", "Alcohols show hydrogen bonding. Primary alcohols oxidise to aldehydes then acids; secondary alcohols to ketones.", "Phenol is more acidic than aliphatic alcohols. Its OH group strongly activates ortho/para electrophilic substitution.", "Williamson ether synthesis uses an alkoxide and preferably a primary haloalkane in an SN2 reaction.", "Ethers are cleaved by concentrated HI/HBr. In anisole, cleavage occurs at the methyl–oxygen bond rather than the aryl–oxygen bond."]], "f": ["2ROH + 2Na → 2RONa + H₂", "RO⁻ + R′X → ROR′ + X⁻"], "e": {"q": "Predict products of anisole with excess HI on heating.", "s": ["Protonation activates the ether oxygen.", "Iodide attacks the methyl group; the aryl C–O bond is not cleaved by SN2."], "a": "Phenol and methyl iodide."}},
+{"id": "o5", "b": "org", "t": "Aldehydes, Ketones and Carboxylic Acids", "off": true, "pr": "medium", "w": 0, "y": ["Carbonyl compounds undergo nucleophilic addition; aldehydes are generally more reactive than ketones because of steric and electronic effects."], "n": [["Revision essentials", "Carbonyl compounds undergo nucleophilic addition; aldehydes are generally more reactive than ketones because of steric and electronic effects.", "Aldol reactions require an α-hydrogen. Cannizzaro disproportionation occurs with suitable aldehydes lacking α-hydrogen in concentrated alkali.", "Tollens reagent usually distinguishes aldehydes from simple ketones; the iodoform test identifies CH₃CO– or compounds oxidisable to that group.", "Carboxylic acids are acidic because carboxylate distributes charge over two oxygen atoms. Electron-withdrawing substituents increase acidity."]], "f": ["RCHO + 2[Ag(NH₃)₂]⁺ + 3OH⁻ → RCOO⁻ + 2Ag + 4NH₃ + 2H₂O", "RCOOH + R′OH ⇌ RCOOR′ + H₂O (acid catalysis)"], "e": {"q": "Does benzaldehyde undergo aldol or Cannizzaro reaction?", "s": ["The aldehyde has no α-hydrogen.", "It disproportionates in concentrated base into an alcohol and a carboxylate."], "a": "Cannizzaro: benzyl alcohol and benzoate."}},
+{"id": "o6", "b": "org", "t": "Amines", "off": true, "pr": "medium", "w": 0, "y": ["Basicity depends on electron availability, resonance, solvation and steric effects. Do not apply a single gas-phase order to every aqueous amine."], "n": [["Revision essentials", "Basicity depends on electron availability, resonance, solvation and steric effects. Do not apply a single gas-phase order to every aqueous amine.", "Aniline is less basic than typical alkylamines because its nitrogen lone pair is delocalised into the ring.", "Hinsberg test distinguishes primary, secondary and tertiary amines; carbylamine test is given by primary amines.", "Aniline diazotisation with NaNO₂/HCl at 273–278 K gives a diazonium salt, useful in Sandmeyer substitutions and azo coupling."]], "f": ["ArNH₂ + NaNO₂ + 2HCl → ArN₂⁺Cl⁻ + NaCl + 2H₂O", "Hofmann bromamide: RCONH₂ → RNH₂ (one carbon fewer)"], "e": {"q": "Convert aniline to chlorobenzene.", "s": ["Diazotise aniline with NaNO₂ and HCl at 273–278 K.", "Treat the benzenediazonium chloride with CuCl/HCl."], "a": "Sandmeyer substitution replaces the diazonium group with Cl, releasing N₂."}},
+{"id": "o7", "b": "org", "t": "Biomolecules", "off": true, "pr": "medium", "w": 0, "y": ["Carbohydrates: glucose is an aldohexose, fructose a ketohexose. Sucrose is non-reducing; maltose and lactose are reducing."], "n": [["Revision essentials", "Carbohydrates: glucose is an aldohexose, fructose a ketohexose. Sucrose is non-reducing; maltose and lactose are reducing.", "Proteins are polymers of α-amino acids joined by peptide bonds. Primary sequence differs from secondary α-helix/β-sheet and tertiary folding.", "Denaturation disrupts higher-order structure and biological activity, generally without hydrolysing the peptide backbone. Enzymes are biological catalysts.", "DNA uses deoxyribose and thymine; RNA uses ribose and uracil. Base pairing: A–T and G–C in DNA. Vitamins and hormones have diverse regulatory roles."]], "f": ["Peptide linkage: –CO–NH–", "DNA base pairs: A–T (2 H-bonds), G–C (3 H-bonds)"], "e": {"q": "Why is sucrose non-reducing?", "s": ["Both anomeric centres participate in its glycosidic linkage.", "Neither can freely open to generate the relevant reducing carbonyl form."], "a": "No free anomeric hemiacetal/hemiketal group remains."}},
+{"id": "x0", "b": "phy", "t": "Solid State", "off": false, "pr": "extra", "w": 0, "y": ["Supplementary background — verify scope against your notification"], "n": [["Optional background", "This chapter is not a standalone unit in the 19-unit syllabus framework used here. Some underlying concepts may still be relevant within official units. Do not infer examination exclusions solely from a chapter title."]], "f": [], "e": null},
+{"id": "x1", "b": "phy", "t": "Surface Chemistry", "off": false, "pr": "extra", "w": 0, "y": ["Supplementary background — verify scope against your notification"], "n": [["Optional background", "This chapter is not a standalone unit in the 19-unit syllabus framework used here. Some underlying concepts may still be relevant within official units. Do not infer examination exclusions solely from a chapter title."]], "f": [], "e": null},
+{"id": "x2", "b": "phy", "t": "States of Matter", "off": false, "pr": "extra", "w": 0, "y": ["Supplementary background — verify scope against your notification"], "n": [["Optional background", "This chapter is not a standalone unit in the 19-unit syllabus framework used here. Some underlying concepts may still be relevant within official units. Do not infer examination exclusions solely from a chapter title."]], "f": [], "e": null},
+{"id": "x3", "b": "ino", "t": "Hydrogen", "off": false, "pr": "extra", "w": 0, "y": ["Supplementary background — verify scope against your notification"], "n": [["Optional background", "This chapter is not a standalone unit in the 19-unit syllabus framework used here. Some underlying concepts may still be relevant within official units. Do not infer examination exclusions solely from a chapter title."]], "f": [], "e": null},
+{"id": "x4", "b": "ino", "t": "s-Block Elements", "off": false, "pr": "extra", "w": 0, "y": ["Supplementary background — verify scope against your notification"], "n": [["Optional background", "This chapter is not a standalone unit in the 19-unit syllabus framework used here. Some underlying concepts may still be relevant within official units. Do not infer examination exclusions solely from a chapter title."]], "f": [], "e": null},
+{"id": "x5", "b": "ino", "t": "p-Block Elements", "off": false, "pr": "extra", "w": 0, "y": ["Supplementary background — verify scope against your notification"], "n": [["Optional background", "This chapter is not a standalone unit in the 19-unit syllabus framework used here. Some underlying concepts may still be relevant within official units. Do not infer examination exclusions solely from a chapter title."]], "f": [], "e": null},
+{"id": "x6", "b": "ino", "t": "Metallurgy", "off": false, "pr": "extra", "w": 0, "y": ["Supplementary background — verify scope against your notification"], "n": [["Optional background", "This chapter is not a standalone unit in the 19-unit syllabus framework used here. Some underlying concepts may still be relevant within official units. Do not infer examination exclusions solely from a chapter title."]], "f": [], "e": null},
+{"id": "x7", "b": "org", "t": "Polymers", "off": false, "pr": "extra", "w": 0, "y": ["Supplementary background — verify scope against your notification"], "n": [["Optional background", "This chapter is not a standalone unit in the 19-unit syllabus framework used here. Some underlying concepts may still be relevant within official units. Do not infer examination exclusions solely from a chapter title."]], "f": [], "e": null},
+{"id": "x8", "b": "org", "t": "Chemistry in Everyday Life", "off": false, "pr": "extra", "w": 0, "y": ["Supplementary background — verify scope against your notification"], "n": [["Optional background", "This chapter is not a standalone unit in the 19-unit syllabus framework used here. Some underlying concepts may still be relevant within official units. Do not infer examination exclusions solely from a chapter title."]], "f": [], "e": null},
+{"id": "x9", "b": "org", "t": "Environmental Chemistry", "off": false, "pr": "extra", "w": 0, "y": ["Supplementary background — verify scope against your notification"], "n": [["Optional background", "This chapter is not a standalone unit in the 19-unit syllabus framework used here. Some underlying concepts may still be relevant within official units. Do not infer examination exclusions solely from a chapter title."]], "f": [], "e": null},
+];
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const KEY='pgtchem.progress.v1';
+let state={done:[],scores:[]}, storageOK=true;
+try{const saved=JSON.parse(localStorage.getItem(KEY));if(saved&&Array.isArray(saved.done)&&Array.isArray(saved.scores))state=saved;}catch(e){storageOK=false;}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){storageOK=false;}}
+const branches={phy:'Physical',ino:'Inorganic',org:'Organic'};
+function button(text,href){return `<a class="btn" href="${href}">${text}</a>`;}
+function badge(u){return `<span class="pill ${u.b}">${branches[u.b]}</span> <span class="pill ${u.off?'ok':'hi'}">${u.off?'Syllabus unit':'Supplementary'}</span>`;}
+function progress(){return UNITS.filter(u=>u.off&&state.done.includes(u.id)).length;}
+function home(){return `<section class="hero card"><div class="kicker">Your chemistry revision workspace</div><h2>Understand the chemistry.<br>Build your confidence.</h2><p class="lead">A focused, distraction-free coach: 19 syllabus units, concise revision notes, worked examples and objective practice. Everything runs in this one file.</p><div class="stats"><div class="stat"><b>${progress()}/19</b><span>Units completed</span><div class="bar-t"><i style="width:${progress()/19*100}%"></i></div></div><div class="stat"><b>${state.scores.length}</b><span>Practice sessions</span></div><div class="stat"><b>−0.25</b><span>Wrong objective answer</span></div></div><div class="cta">${button('Explore syllabus →','#topics')}<a class="btn ghost" href="#test">Practice questions</a></div></section><div class="sec-h"><h2>Know your examination</h2><span class="n">01/2025 reference · verify updates</span></div><div class="grid g3"><article class="card pat t1"><h3>Tier-1 · Screening</h3><p class="m">100 Q · 300 marks</p><ul><li>2 hours; +3 correct, −1 wrong.</li><li>Screening stage; consult the notification for mode and shortlisting rules.</li><li>Reasoning, numerical ability, computers, general knowledge and languages.</li></ul></article><article class="card pat t2"><h3>Tier-2 · Chemistry</h3><p class="m">70 Q · 100 marks</p><ul><li>150 minutes shared across the paper.</li><li>60 objective × 1 mark; −0.25 for a wrong objective answer.</li><li>10 descriptive × 4 marks.</li></ul></article><article class="card pat iv"><h3>Interview & selection</h3><p class="m">100 marks</p><ul><li>Reference final weighting: Tier-2 85%, interview 15%.</li><li>Tier-1 is screening, not final-merit marks.</li><li>Check category, post and organisation-specific rules in the official notice.</li></ul></article></div><div class="sec-h"><h2>A practical study rhythm</h2></div><div class="grid g3">${['Read one unit and explain it aloud without looking.','Work the example, then change its numbers or conditions.','Practice, inspect every explanation, and revisit weak concepts.'].map((x,i)=>`<article class="card gsec"><div class="kicker">Step 0${i+1}</div><p style="margin-top:10px">${x}</p></article>`).join('')}</div><p class="small muted" style="margin-top:18px">Notes are a revision starting point, not complete textbooks. Progress is stored on this device only${storageOK?'':'; browser storage is unavailable, so export before leaving'}.</p>`;}
+let filter='all',query='';
+function topics(){return `<div class="sec-h"><h2>The syllabus, organised</h2><span class="n">19 core units + optional background</span></div><label class="sr" for="search">Search units</label><input class="search" style="width:100%;margin-bottom:12px" id="search" placeholder="Search a unit or concept…" value="${esc(query)}"><div class="chipbar">${[['all','All units'],['phy','Physical'],['ino','Inorganic'],['org','Organic'],['extra','Supplementary']].map(([id,label])=>`<button class="chip" data-filter="${id}" aria-pressed="${filter===id}">${label}</button>`).join('')}</div><div class="ulist" id="unit-list">${unitList()}</div>`;}
+function unitList(){let list=UNITS.filter(u=>(filter==='extra'?!u.off:u.off&&(filter==='all'||u.b===filter))&&(u.t+' '+u.y.join(' ')).toLowerCase().includes(query.toLowerCase()));return list.map(u=>`<a class="urow ${state.done.includes(u.id)?'done':''}" href="#topics/${u.id}"><span class="idx">${state.done.includes(u.id)?'✓':UNITS.indexOf(u)+1}</span><div class="bd"><h3>${esc(u.t)}</h3><p>${esc(u.y.join(' · '))}</p><div class="badges">${badge(u)}</div></div><span aria-hidden="true">→</span></a>`).join('')||'<p>No matching units. Try another search.</p>';}
+function unit(id){const u=UNITS.find(x=>x.id===id);if(!u)return '<h2>Unit not found</h2><a href="#topics">Return to syllabus</a>';return `<a href="#topics">← All units</a><article class="unit-head card" style="margin-top:12px">${badge(u)}<h2>${esc(u.t)}</h2><div class="cta"><button class="btn acc" id="complete" data-id="${u.id}">${state.done.includes(u.id)?'✓ Completed — mark incomplete':'Mark completed'}</button><button class="btn ghost" onclick="window.print()">Print notes</button></div></article>${!u.off?'<aside class="offnote">Supplementary background, not a standalone unit in this reference syllabus. Check exact official scope before allocating revision time.</aside>':''}${u.n.map(a=>`<section class="note-sec card"><h3>${esc(a[0])}</h3><ul>${a.slice(1).map(t=>`<li>${esc(t)}</li>`).join('')}</ul></section>`).join('')}${u.f.length?`<section class="formulas"><h3>Formula & concept strip</h3>${u.f.map(t=>`<code>${esc(t)}</code>`).join('')}</section>`:''}${u.e?`<section class="ex card"><h3>Worked example</h3><p class="q">${esc(u.e.q)}</p><ol>${u.e.s.map(t=>`<li>${esc(t)}</li>`).join('')}</ol><p class="a">${esc(u.e.a)}</p></section>`:''}<p class="small muted" style="margin-top:14px">Original revision notes. Read NCERT and the official syllabus for full scope; report or correct any ambiguity before relying on a formula.</p>`;}
+// Original practice questions, not previous-year or officially endorsed questions.
+const BANK=[
+['p1','One mole contains approximately how many particles?',['6.022 × 10²³','3.011 × 10²³','22.4','1.66 × 10⁻²⁴'],0,'Avogadro constant is approximately 6.022 × 10²³ mol⁻¹.'],
+['p2','Total number of orbitals for n = 3?',['3','6','9','18'],2,'A shell has n² orbitals: 3² = 9.'],
+['p3','At constant T and p, a spontaneous process has:',['ΔG > 0','ΔG < 0','ΔG = 0 always','ΔH > 0 always'],1,'Gibbs energy decreases in a spontaneous process at constant T and p.'],
+['p4','At 298 K, pH of an ideal 0.001 M HCl solution is:',['1','3','7','11'],1,'For this strong acid [H⁺] ≈ 10⁻³ M, so pH = 3.'],
+['p5','Oxidation number of Mn in MnO₄⁻ is:',['+2','+4','+6','+7'],3,'x + 4(−2) = −1, giving x = +7.'],
+['p6','Ideal van’t Hoff factor for fully dissociated CaCl₂ is:',['1','2','3','4'],2,'CaCl₂ gives one Ca²⁺ and two Cl⁻ ions: three particles.'],
+['p7','Oxidation takes place at which electrode?',['Anode','Cathode','Salt bridge','Both equally'],0,'Oxidation is at the anode in both galvanic and electrolytic cells.'],
+['p8','Units of a first-order rate constant are:',['mol L⁻¹ s⁻¹','s⁻¹','L mol⁻¹ s⁻¹','mol² L⁻² s⁻¹'],1,'Rate = k[A], so k has reciprocal-time units.'],
+['i1','Among these isoelectronic ions, which is smallest?',['N³⁻','F⁻','Na⁺','Al³⁺'],3,'With equal electron counts, greater nuclear charge gives a smaller radius.'],
+['i2','Bond order of O₂ according to MOT is:',['0','1','2','3'],2,'Bond order = (10 bonding − 6 antibonding)/2 = 2.'],
+['i3','Purple colour of permanganate is primarily due to:',['d–d transition','Charge transfer','Metallic bonding','Hydrogen bonding'],1,'Mn(VII) is d⁰. Ligand-to-metal charge transfer produces the intense colour.'],
+['i4','Coordination number of Co in [Co(en)₃]³⁺ is:',['2','3','6','9'],2,'Each en ligand is bidentate. Three ligands donate via six nitrogen atoms.'],
+['o1','A nucleophile primarily:',['Accepts an electron pair','Donates an electron pair','Always has positive charge','Always is neutral'],1,'Nucleophiles are electron-pair donors and may be negative or neutral.'],
+['o2','Peroxide-induced anti-Markovnikov addition is standard for:',['HCl','HBr','HI','HF'],1,'Only HBr supports the favourable radical propagation steps in the standard treatment.'],
+['o3','A simple SN2 reaction at a chiral centre typically gives:',['Retention','Inversion','No reaction in all cases','Only elimination'],1,'Backside attack gives Walden inversion.'],
+['o4','Williamson synthesis of an ether normally uses:',['Alkoxide + primary haloalkane','Alkane + water','Ketone + oxygen','Amine + ester'],0,'An alkoxide displaces a leaving group through an SN2 reaction.'],
+['o5','Benzaldehyde in concentrated alkali can undergo:',['Cannizzaro reaction','Ordinary self-aldol reaction','Only ester hydrolysis','No reaction'],0,'It lacks an α-hydrogen and undergoes disproportionation.'],
+['o6','The carbylamine test is characteristic of:',['Primary amines','Secondary amines','Tertiary amines','Amides'],0,'Primary amines react with chloroform and alcoholic KOH to give isocyanides.'],
+['o7','Which is a non-reducing sugar?',['Glucose','Maltose','Lactose','Sucrose'],3,'Both anomeric centres of sucrose participate in its glycosidic bond.']
+];
+let quiz=null, timer=null;
+function test(){return `<div class="sec-h"><h2>Practice with purpose</h2><span class="n">${BANK.length} original questions</span></div><p class="muted" style="margin-bottom:16px">A small revision bank, not an official paper or a full-length mock. Answers are not repeated to manufacture a 60-question test. Objective marking: +1 correct, −0.25 wrong, 0 skipped.</p><div class="grid g2"><section class="card mode"><h3>Quick recall</h3><p>10 randomly selected questions. Review explanations after submission.</p><div class="row"><span>10 Q</span><span>15 minutes</span></div><button class="btn acc" data-start="10">Start quick practice</button></section><section class="card mode"><h3>Whole-syllabus check</h3><p>One question from each of the 19 reference units. A broad diagnostic, not a coverage guarantee.</p><div class="row"><span>19 Q</span><span>30 minutes</span></div><button class="btn" data-start="19">Start syllabus check</button></section></div><section class="card gsec" style="margin-top:16px"><h3>Descriptive practice · self-assessed</h3><p class="small muted">The real paper shares 150 minutes across 60 objective and 10 descriptive questions. This objective-only practice does not simulate that full paper.</p><ol><li>Derive the first-order integrated rate equation and explain its half-life.</li><li>Compare high- and low-spin octahedral d⁵ complexes with orbital occupancy and magnetic moments.</li><li>Explain the common-ion effect with a solubility-product calculation.</li><li>Explain why benzaldehyde undergoes Cannizzaro reaction but ethanal undergoes aldol reaction.</li></ol><p class="small">Self-check: correct principle, clear steps, balanced equations, units and a justified final conclusion. No automatic descriptive grading is claimed.</p></section>${state.scores.length?`<div class="sec-h"><h2>Recent sessions</h2></div><div class="card gsec">${state.scores.slice(-5).reverse().map(x=>`<p>${esc(x.date)} · ${x.score}/${x.total} · ${x.correct} correct</p>`).join('')}</div>`:''}`;}
+function shuffle(a){return a.slice().sort(()=>Math.random()-.5);}
+function start(n){quiz={qs:shuffle(BANK).slice(0,n),answers:{},end:Date.now()+(n===10?15:30)*60000,finished:false};drawQuiz();timer=setInterval(tick,1000);tick();}
+function drawQuiz(){ $('#main').innerHTML=`<div class="quiz-top"><b>Objective practice</b><span class="clock" id="clock" role="timer"></span><button class="btn sm" id="submit">Submit</button></div><form id="quiz-form" class="grid">${quiz.qs.map((q,i)=>`<article class="qcard card"><fieldset><legend>${i+1}. ${esc(q[1])}</legend><p class="meta">${esc(UNITS.find(u=>u.id===q[0]).t)}</p>${q[2].map((o,j)=>`<label class="opt"><input type="radio" name="q${i}" value="${j}" ${quiz.answers[i]===j?'checked':''}><span>${esc(o)}</span></label>`).join('')}<button type="button" class="btn ghost sm" data-clear="${i}">Clear answer</button></fieldset></article>`).join('')}</form>`;}
+function tick(){if(!quiz||quiz.finished)return;const t=Math.max(0,Math.ceil((quiz.end-Date.now())/1000));const el=$('#clock');if(el)el.textContent=`${Math.floor(t/60)}:${String(t%60).padStart(2,'0')}`;if(!t)finish();}
+function finish(){if(!quiz||quiz.finished)return;clearInterval(timer);quiz.finished=true;let correct=0,wrong=0;quiz.qs.forEach((q,i)=>{if(quiz.answers[i]===q[3])correct++;else if(quiz.answers[i]!==undefined)wrong++;});const total=quiz.qs.length,score=correct-.25*wrong;state.scores.push({date:new Date().toLocaleDateString(),score,total,correct});state.scores=state.scores.slice(-30);save();$('#main').innerHTML=`<section class="card res" role="status"><h2>Practice complete</h2><p class="big" style="margin-top:15px">${score} / ${total}</p><p class="sub">${correct} correct · ${wrong} wrong · ${total-correct-wrong} skipped</p><p class="calc">Score = ${correct} × 1 − ${wrong} × 0.25 = ${score}\nAttempted accuracy: ${correct+wrong?Math.round(correct/(correct+wrong)*100):0}%</p><div class="cta" style="justify-content:center">${button('Practice again','#test')}</div></section><div class="sec-h"><h2>Review every answer</h2></div>${quiz.qs.map((q,i)=>`<article class="card gsec"><h3>${i+1}. ${esc(q[1])}</h3><p style="margin-top:8px">Your answer: ${quiz.answers[i]===undefined?'Skipped':esc(q[2][quiz.answers[i]])}</p><p><b>Correct: ${esc(q[2][q[3]])}</b></p><p class="exp">${esc(q[4])}</p><a class="small" href="#topics/${q[0]}">Review this unit →</a></article>`).join('')}`;window.scrollTo(0,0);}
+const LINKS=[['Official recruitment notices','CBSE — check notification, examination scheme and corrections.','https://www.cbse.gov.in/'],['Kendriya Vidyalaya Sangathan','Recruitment notices and organisation-specific rules.','https://kvsangathan.nic.in/'],['Navodaya Vidyalaya Samiti','Recruitment notices and candidate instructions.','https://navodaya.gov.in/'],['NCERT textbooks','Free official Class XI and XII chemistry textbooks.','https://ncert.nic.in/textbook.php'],['Reference syllabus PDF','Notification 01/2025 syllabus attachment; confirm the correct post within the document.','https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2025-11-2025111338.pdf'],['Exam scheme reference PDF','Read all subsequent corrections on the official recruitment portal.','https://cdnbbsr.s3waas.gov.in/s3kv02c42cf0250e08664c1ef7249361ef/uploads/2025-11-2025111824.pdf']];
+function links(){return `<div class="sec-h"><h2>Go straight to the source</h2></div><p class="muted" style="margin-bottom:16px">Official resources, not pirated textbooks. External sites require internet and may change their addresses.</p><div class="grid g2">${LINKS.map(([t,d,url])=>`<a class="lnk" href="${url}" target="_blank" rel="noopener noreferrer"><span class="ic" aria-hidden="true">↗</span><div><h3>${t}</h3><p>${d}</p><span class="host">${new URL(url).hostname} · opens in new tab</span></div></a>`).join('')}</div>`;}
+function guide(){return `<div class="sec-h"><h2>Your preparation guide</h2></div><section class="card gsec"><h3>Eligibility: check before you apply</h3><p>PGT eligibility commonly involves a relevant postgraduate degree, prescribed minimum marks, a recognised teacher-education qualification and proficiency in Hindi/English teaching. PGT Chemistry subject combinations and accepted qualifications must be checked in the exact KVS or NVS notification.</p><ul><li>The reference PGT upper-age limit is 40, subject to the notice's cut-off date and category-specific relaxations.</li><li>CTET is generally not a PGT requirement; do not apply TGT rules to PGT posts.</li><li>Do not assume every Chemistry specialisation, integrated degree or Special B.Ed is accepted.</li><li>Verify fees, exemptions, documents, vacancies and qualification deadlines directly in the official notice.</li></ul><a href="#links">Open official sources →</a></section><section class="card gsec"><h3>How to allocate study time</h3><ul><li>First pass: cover all 19 units. No invented topic weightage is used here.</li><li>Second pass: focus on mechanisms, numerical methods, bonding and coordination concepts you cannot yet explain unaided.</li><li>Use spaced recall: revisit a unit after one day, one week and one month.</li><li>Practice descriptive answers with definitions, labelled orbital diagrams, balanced equations and units.</li><li>Full-paper planning must allow time for BOTH 60 objective and 10 descriptive questions in 150 minutes.</li></ul></section><section class="card gsec"><h3>Privacy & progress</h3><p>No login, analytics or network requests are required to use this file. Completion and recent scores are saved only in this browser's local storage. Clearing browser data removes them. This is not cloud sync.</p><div class="cta"><button class="btn ghost" id="export">Export progress</button><label class="btn ghost" for="import">Import progress</label><input type="file" id="import" accept="application/json,.json" class="sr"><button class="btn ghost" id="reset">Reset progress</button></div><p id="storage-status" class="small" role="status"></p></section><section class="card gsec"><h3>Use offline or deploy</h3><ul><li>Download this index.html and open it directly in a modern browser. The whole coach, notes and questions are embedded; external links need internet.</li><li>For stable hosting, upload this file to your static host or an existing repository's Pages deployment. Use relative paths if you add assets later.</li><li>Hash links such as #topics/p7 work without server rewrites.</li><li>This file does not claim installable-PWA support: a reliable service worker requires separately hosted files and HTTPS.</li></ul></section><section class="card gsec"><h3>About this edition</h3><p>Prepared 17 October 2026 as an independent revision aid using a 19-unit syllabus framework. This date is an edition date, not a claim of live verification. No official affiliation, rank prediction, comprehensive question coverage or future-pattern guarantee is implied.</p></section>`;}
+function render(){if(quiz&&!quiz.finished){clearInterval(timer);quiz=null;}const [tab='home',id]=location.hash.slice(1).split('/');const route=['home','topics','test','links','guide'].includes(tab)?tab:'home';$('#main').innerHTML=route==='topics'?(id?unit(id):topics()):({home,test,links,guide}[route])();document.querySelectorAll('[data-tab]').forEach(el=>{if(el.dataset.tab===route)el.setAttribute('aria-current','page');else el.removeAttribute('aria-current');});document.title=`${route.charAt(0).toUpperCase()+route.slice(1)} · PGT Chemistry Coach`;window.scrollTo(0,0);}
+document.addEventListener('click',e=>{const f=e.target.closest('[data-filter]');if(f){filter=f.dataset.filter;render();}const c=e.target.closest('#complete');if(c){state.done=state.done.includes(c.dataset.id)?state.done.filter(x=>x!==c.dataset.id):[...state.done,c.dataset.id];save();render();}const st=e.target.closest('[data-start]');if(st)start(Number(st.dataset.start));if(e.target.closest('#submit')&&confirm('Submit your practice answers?'))finish();const cl=e.target.closest('[data-clear]');if(cl&&quiz){delete quiz.answers[Number(cl.dataset.clear)];document.querySelectorAll(`[name="q${cl.dataset.clear}"]`).forEach(x=>x.checked=false);}if(e.target.closest('#export')){const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='pgt-chemistry-progress.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}if(e.target.closest('#reset')&&confirm('Remove all completion marks and saved scores on this device?')){state={done:[],scores:[]};save();render();}});
+document.addEventListener('input',e=>{if(e.target.id==='search'){query=e.target.value;$('#unit-list').innerHTML=unitList();}});
+document.addEventListener('change',async e=>{if(e.target.matches('#quiz-form input[type=radio]')&&quiz)quiz.answers[Number(e.target.name.slice(1))]=Number(e.target.value);if(e.target.id==='import'&&e.target.files[0]){try{const v=JSON.parse(await e.target.files[0].text());if(!v||!Array.isArray(v.done)||!Array.isArray(v.scores)||v.done.some(id=>!UNITS.some(u=>u.id===id))||v.scores.some(x=>!x||typeof x.date!=='string'||!Number.isFinite(x.score)||!Number.isFinite(x.total)||!Number.isFinite(x.correct)))throw Error('Invalid progress format');if(confirm('Replace local progress with this file?')){state={done:[...new Set(v.done)],scores:v.scores.slice(-30)};save();render();$('#storage-status').textContent='Progress imported.';}}catch(err){$('#storage-status').textContent='Could not import: invalid or unreadable progress file.';}}});
+window.addEventListener('hashchange',render);
+window.addEventListener('beforeunload',e=>{if(quiz&&!quiz.finished){e.preventDefault();e.returnValue='';}});
+$('#foot-stamp').textContent='Edition: 17 October 2026.';
+render();
+</script>
+</body>
+</html>
